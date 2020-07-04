@@ -8,6 +8,7 @@
   margin: @section-y-margin*2 auto;
 
   &__title {
+    margin-bottom: 0;
     animation: scalein @transition-duration * 2;
   }
   &__subtitle {
@@ -20,8 +21,8 @@
 
 .contact {
   padding: @box-space - @space;
-  margin-top: 2em;
-  border: 0.25rem dashed @accent-color;
+  margin-top: 2rem;
+  border: 0.5rem solid @accent-color;
   border-radius: @border-radius;
   @animations: fadein, moveup;
   @duration: @transition-duration*5, @transition-duration*5;
