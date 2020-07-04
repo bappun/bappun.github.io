@@ -35,7 +35,7 @@
         <p class="intro__subtitle">Développeur web full stack</p>
         <div class="contact">
             <a class="button button--transparent contact__link" href="https://www.linkedin.com/in/baptiste-rouxel" target="_blank" rel="noopener">
-                <span class="icon">{{> assets/linkedin.svg }}</span>
+                <span class="icon color-linkedin">{{> assets/linkedin.svg }}</span>
                 <span>LinkedIn</span>
             </a>
             <a class="button button--transparent contact__link" href="https://github.com/bappun" target="_blank" rel="noopener">
@@ -43,7 +43,7 @@
                 <span>GitHub</span>
             </a>
             <a class="button button--transparent contact__link" href="https://twitter.com/baptiste_rouxel" target="_blank" rel="noopener">
-                <span class="icon">{{> assets/twitter.svg }}</span>
+                <span class="icon color-twitter">{{> assets/twitter.svg }}</span>
                 <span>Twitter</span>
             </a>
             <a class="button button--transparent contact__link" href="mailto:hello@baptiste-rouxel.com">
@@ -212,8 +212,11 @@
     </article>
 </main>
 <footer class="footer">
-    <div class="footer__header"><span class="brand"></span></div>
-    <div class="footer__name">Baptiste Rouxel</div>
+    <div class="footer__content">
+        <span class="brand"></span><br/>
+        <span>Baptiste Rouxel</span>
+    </div>
+    <a href="#top" class="button" role="button" aria-label="To top"><span class="icon">{{> assets/arrow-up.svg }}</span><span>Haut de page</span></a>
 </footer>
 <script src="./dist/main.js"></script>
 </body>

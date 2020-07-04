@@ -1,5 +1,5 @@
 .card {
-  background-color: @bg-color-dark;
+  border: @border-width solid @bg-color-dark;
   border-radius: @border-radius;
   margin-bottom: @space;
   position: relative;
@@ -38,11 +38,11 @@
 
   & + .card::before {
     content: '';
-    background: @accent-color;
+    background: @secondary-color;
     position: absolute;
-    top: -@space;
-    left: calc(50% - 0.5rem/2);
-    width: 0.5rem;
+    top: -@space - @border-width;
+    left: calc(50% - @border-width/2);
+    width: @border-width;
     height: @space;
   }
 }

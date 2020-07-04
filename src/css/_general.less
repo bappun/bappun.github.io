@@ -35,10 +35,21 @@ body {
   }
 }
 
-.footer { background-color: @bg-color-dark; padding: @box-space; }
+.footer {
+  border-top: @border-width solid @bg-color-dark;
+  padding: @section-y-margin;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media @med-under-md {
+    flex-direction: column;
+    .footer__content { margin-bottom: 2em; text-align: center; }
+  }
+}
 
 .section__title {
-  border-left: 0.5rem solid @accent-color;
+  border-left: @border-width solid @accent-color;
   border-radius: @border-radius;
   padding-left: 0.5em;
 }
