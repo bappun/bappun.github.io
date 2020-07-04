@@ -7,7 +7,7 @@
   padding: 0 @button-padding;
   border-radius: 9999999px;
   background-color: @accent-color;
-  color: white;
+  color: @font-color;
 
   &--inactive { cursor: default };
   &--rounded {
@@ -17,7 +17,7 @@
     width: @button-height;
     img { height: 1.25rem; }
   }
-  &--brand { background-color: @bg-color-light; }
+  &--brand { border: 2px solid @bg-color-dark; background-color: @bg-color; }
   &--transparent { background-color: transparent; padding: 0; height: auto; }
   &--menu {
     margin: @box-space @space @box-space @box-space;

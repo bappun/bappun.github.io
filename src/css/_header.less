@@ -1,9 +1,9 @@
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 10;
   width: 100%;
-  animation: fadein @transition-duration * 5;
+  animation: fadein @transition-duration*5;
 }
 
 .menu {
@@ -21,8 +21,8 @@
       content: '';
       display: block;
       width: 0;
-      height: 0.1em;
-      background: white;
+      height: 2px;
+      background: @font-color;
       transition: width @transition-duration;
     }
 
