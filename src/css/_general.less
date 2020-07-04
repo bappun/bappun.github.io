@@ -1,8 +1,7 @@
-// STYLE
 a { text-decoration: none; color: @accent-color; }
 h1 { margin-top: 0; }
 
-section, .footer { animation: fadein @transition-duration * 5; }
+.section, .footer { animation: fadein @transition-duration * 5; }
 
 html {
   background-color: @bg-color;
@@ -25,7 +24,7 @@ body {
   line-height: 1.5;
 }
 
-section {
+.section {
   max-width: @max-document-width;
   margin: auto;
   padding: @section-y-padding @box-space;
@@ -35,7 +34,7 @@ section {
     &:hover { opacity: @transition-opacity; }
   }
 
-  & + section { padding-top: 0; }
+  & + .section { padding-top: 0; }
   article:last-child { margin-bottom: 0; }
 }
 

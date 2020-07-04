@@ -30,7 +30,7 @@
     </nav>
 </header>
 <main id="page">
-    <section class="intro">
+    <article class="section intro">
         <h1 id="intro" class="intro__title">Hello&nbsp;world&nbsp;! Je&nbsp;suis Baptiste&nbsp;Rouxel</h1>
         <h2 class="intro__subtitle">Développeur web</h2>
         <div class="contact">
@@ -52,10 +52,24 @@
             </a>
         </div>
         <a class="intro__next" href="#experience"><span class="icon">{{> assets/arrow-down.svg }}</span></a>
-    </section>
-    <section>
+    </article>
+    <article class="section">
         <span id="experience" class="anchor"></span>
         <h1 class="section__title">Expérience</h1>
+        <article class="card">
+            <h1 class="card__title">Développeur Web</h1>
+            <div class="card__body">
+                <p>Participation au développement d'une application de gestion d'échantillons dans le contexte de questionnaires en ligne.</p>
+                <p>Cette application est développée dans le cadre de SSHOC, une plateforme en ligne européenne regroupant des outils pour la recherche en sciences humaines et sociales.</p>
+            </div>
+            <footer class="card__footer">
+                <div class="card__logo">
+                    <a href="https://cdsp.sciences-po.fr/fr" target="_blank" rel="noopener">Sciences Po</a>
+                    <a href="https://www.cnrs.fr" target="_blank" rel="noopener">CNRS</a>
+                </div>
+                <span>2019-2021</span>
+            </footer>
+        </article>
         <article class="card">
             <h1 class="card__title">Apprenti Développeur Web</h1>
             <div class="card__body">
@@ -81,8 +95,8 @@
                 <span>2016-2017</span>
             </footer>
         </article>
-    </section>
-    <section>
+    </article>
+    <article class="section">
         <span id="formation" class="anchor"></span>
         <h1 class="section__title">Formation</h1>
         <article class="card">
@@ -122,20 +136,8 @@
                 <span>2014-2016</span>
             </footer>
         </article>
-        <article class="card">
-            <h1 class="card__title">Baccalauréat Scientifique</h1>
-            <div class="card__body">
-                <p>Filière Sciences de la Vie et de la Terre (SVT)<br>Spécialité Informatique et Sciences du Numérique (ISN)</p>
-            </div>
-            <footer class="card__footer">
-                <div class="card__logo">
-                    <a href="https://www.lyceevernant.fr/site" target="_blank" rel="noopener">Lycée Jean-Pierre Vernant</a>
-                </div>
-                <span>2012-2014</span>
-            </footer>
-        </article>
-    </section>
-    <section>
+    </article>
+    <article class="section">
         <span id="skills" class="anchor"></span>
         <h1 class="section__title">Compétences</h1>
         <article id="skills-list" class="list list--skills">
@@ -160,13 +162,11 @@
             <span></span>
             <span></span>
         </div>
-    </section>
-    <section>
-        <article id="languages-list" class="list list--languages">
+        <article id="languages-list" class="pt list list--languages">
             <article class="item">
                 <div class="item__icon item__icon--text">EN</div>
                 <h1 class="item__title">Anglais</h1>
-                <div class="item__description">Niveau Avancé - TOEIC 920<br>4 semaines de summer school au Pays de Galles</div>
+                <div class="item__description">Niveau Avancé - TOEIC 920/990<br>4 semaines de summer school au Pays de Galles</div>
             </article>
             <article class="item">
                 <div class="item__icon item__icon--text">日本語</div>
@@ -184,8 +184,8 @@
             <span></span>
             <span></span>
         </div>
-    </section>
-    <section>
+    </article>
+    <article class="section">
         <span id="hobbies" class="anchor"></span>
         <h1 class="section__title">Centres d'intérêt</h1>
         <article id="hobbies-list" class="list list--hobbies">
@@ -196,8 +196,8 @@
             </article>
             <article class="item">
                 <div class="item__icon">{{> assets/trading.svg }}</div>
-                <h1 class="item__title">Trading</h1>
-                <span class="item__description">Lecture des courbes et prédiction</span>
+                <h1 class="item__title">Investissement & trading</h1>
+                <span class="item__description">Lecture des courbes, prédiction et gestion des risques</span>
             </article>
             <article class="item">
                 <div class="item__icon">{{> assets/language.svg }}</div>
@@ -210,7 +210,7 @@
             <span></span>
             <span></span>
         </div>
-    </section>
+    </article>
 </main>
 <footer class="footer">
     <div class="footer__header"><span class="brand"></span></div>
