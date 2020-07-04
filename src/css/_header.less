@@ -17,7 +17,7 @@
   &__link {
     color: inherit;
 
-    &:after {
+    &::after {
       content: '';
       display: block;
       width: 0;
@@ -26,7 +26,7 @@
       transition: width @transition-duration;
     }
 
-    &:hover:after { width: 100%; }
+    &:hover::after { width: 100%; }
   }
 }
 
