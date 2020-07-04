@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <title>Baptiste Rouxel - Développeur web</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="description" content="Site de Baptiste Rouxel, développeur web.">
+    <meta name="language" content="french">
+    <meta name="country" content="France">
+    <meta name="keywords" content="Développement,Développeur,Django,Python,HTML,CSS,JavaScript,JS">
+    <meta name="web_author" content="Baptiste Rouxel">
+    <meta name="author" content="Baptiste Rouxel">
+    <meta name="designer" content="Baptiste Rouxel">
+    <meta name="publisher" content="Baptiste Rouxel">
+    <meta name="reply-to" content="hello@baptiste-rouxel.com">
+    <meta name="copyright" content="Copyright owner">
+    <meta name="rating" content="general">
+    <meta name="distribution" content="global">
+
+    <meta name="HandheldFriendly" content="true">
+    <meta name="theme-color" content="#21222e">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="icon" type="image/png" href="./src/assets/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="./src/assets/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./src/assets/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+<body>
+<header class="header">
+    <nav class="menu" role="navigation">
+        <a class="button button--rounded menu__burger button--menu" role="button" aria-label="Menu">
+            <span class="icon">{{> assets/menu.svg }}</span>
+        </a>
+        <a class="button button--brand button--menu" href="#top" role="button" aria-label="To top"><span class="brand"></span></a>
+        <div class="menu__links">
+            <a class="menu__link" href="#experience">Expérience</a>
+            <a class="menu__link" href="#formation">Formation</a>
+            <a class="menu__link" href="#skills">Compétences</a>
+            <a class="menu__link" href="#hobbies">Centres d'intérêt</a>
+        </div>
+        <div class="menu__overlay"></div>
+    </nav>
+</header>
+<main id="page">
+    <section class="intro">
+        <h1 id="intro" class="intro__title">Hello&nbsp;world&nbsp;! Je&nbsp;suis Baptiste&nbsp;Rouxel</h1>
+        <h2 class="intro__subtitle">Développeur web</h2>
+        <div class="contact">
+            <a class="button button--transparent contact__link" href="https://www.linkedin.com/in/baptiste-rouxel" target="_blank" rel="noopener">
+                <span class="icon">{{> assets/linkedin.svg }}</span>
+                <span>LinkedIn</span>
+            </a>
+            <a class="button button--transparent contact__link" href="https://github.com/bappun" target="_blank" rel="noopener">
+                <span class="icon">{{> assets/github.svg }}</span>
+                <span>GitHub</span>
+            </a>
+            <a class="button button--transparent contact__link" href="https://twitter.com/baptiste_rouxel" target="_blank" rel="noopener">
+                <span class="icon">{{> assets/twitter.svg }}</span>
+                <span>Twitter</span>
+            </a>
+            <a class="button button--transparent contact__link" href="mailto:hello@baptiste-rouxel.com">
+                <span class="icon">{{> assets/email.svg }}</span>
+                <span>Mail</span>
+            </a>
+        </div>
+        <a class="intro__next" href="#experience"><span class="icon">{{> assets/arrow-down.svg }}</span></a>
+    </section>
+    <section>
+        <span id="experience" class="anchor"></span>
+        <h1 class="section__title">Expérience</h1>
+        <article class="card">
+            <h1 class="card__title">Apprenti Développeur Web</h1>
+            <div class="card__body">
+                <p>Développement d'applications au service de la recherche. Programmation de fonctionnalités et d'enquêtes à réaliser sur tablette tactile, aide à l'archivage et au traitement des données.</p>
+            </div>
+            <footer class="card__footer">
+                <div class="card__logo">
+                    <a href="https://cdsp.sciences-po.fr/fr" target="_blank" rel="noopener">Sciences Po</a>
+                    <a href="https://www.cnrs.fr" target="_blank" rel="noopener">CNRS</a>
+                </div>
+                <span>2017-2019</span>
+            </footer>
+        </article>
+        <article class="card">
+            <h1 class="card__title">Apprenti Développeur Logiciel</h1>
+            <div class="card__body">
+                <p>Chargé du développement d’un module de gestion de blocs opératoires pour un progiciel médical utilisé dans des hôpitaux français.</p>
+            </div>
+            <footer class="card__footer">
+                <div class="card__logo">
+                    <a href="http://www.computer-engineering.fr" target="_blank" rel="noopener">Computer Engineering</a>
+                </div>
+                <span>2016-2017</span>
+            </footer>
+        </article>
+    </section>
+    <section>
+        <span id="formation" class="anchor"></span>
+        <h1 class="section__title">Formation</h1>
+        <article class="card">
+            <h1 class="card__title">Ingénieur Informatique</h1>
+            <div class="card__body">
+                <p>L’ESIEA forme des ingénieur(e)s généralistes des Sciences et Technologies du Numérique, adaptables à leur environnement technique et humain, ainsi qu’aux exigences de secteurs d’activité très diversifiés en France et à l'international.</p>
+            </div>
+            <footer class="card__footer">
+                <div class="card__logo">
+                    <a href="https://www.esiea.fr" target="_blank" rel="noopener">ESIEA</a>
+                    <a href="https://cfa-ite.fr" target="_blank" rel="noopener">CFA-ITE</a>
+                </div>
+                <span>2016-2019</span>
+            </footer>
+        </article>
+        <article class="card">
+            <h1 class="card__title">Fondamentaux du Digital Marketing</h1>
+            <div class="card__body">
+                <p>La formation Google Ateliers Numériques consiste en 26 modules couvrant de nombreux thèmes du marketing digital : recherche emailing, médias sociaux, display, vidéo, e-commerce, ciblage, analyse d'audience, et bien plus.</p>
+            </div>
+            <footer class="card__footer">
+                <div class="card__logo">
+                    <a href="https://learndigital.withgoogle.com/ateliersnumeriques" target="_blank" rel="noopener">Google Ateliers Numériques</a>
+                </div>
+                <span>2016</span>
+            </footer>
+        </article>
+        <article class="card">
+            <h1 class="card__title">DUT Informatique</h1>
+            <div class="card__body">
+                <p>Les étudiants formés doivent être capables de participer à la conception, la réalisation et la mise en œuvre de systèmes informatiques correspondant aux besoins des utilisateurs. Pour assumer ces responsabilités, les informaticiens doivent être compétents sur le plan technologique, connaître l'environnement socio-économique dans lequel ils auront à exercer leur profession, posséder une bonne culture générale et se montrer aptes à la communication.</p>
+            </div>
+            <footer class="card__footer">
+                <div class="card__logo">
+                    <a href="http://www.iut-velizy.uvsq.fr" target="_blank" rel="noopener">IUT de Vélizy</a>
+                </div>
+                <span>2014-2016</span>
+            </footer>
+        </article>
+        <article class="card">
+            <h1 class="card__title">Baccalauréat Scientifique</h1>
+            <div class="card__body">
+                <p>Filière Sciences de la Vie et de la Terre (SVT)<br>Spécialité Informatique et Sciences du Numérique (ISN)</p>
+            </div>
+            <footer class="card__footer">
+                <div class="card__logo">
+                    <a href="https://www.lyceevernant.fr/site" target="_blank" rel="noopener">Lycée Jean-Pierre Vernant</a>
+                </div>
+                <span>2012-2014</span>
+            </footer>
+        </article>
+    </section>
+    <section>
+        <span id="skills" class="anchor"></span>
+        <h1 class="section__title">Compétences</h1>
+        <article id="skills-list" class="list list--skills">
+            <article class="item">
+                <div class="item__icon">{{> assets/code.svg }}</div>
+                <h1 class="item__title">Développement</h1>
+                <div class="item__description">Programmation en Python, Django, JavaScript, Vue.js<br>Utilisation de Git, Docker et Webpack</div>
+            </article>
+            <article class="item">
+                <div class="item__icon">{{> assets/design.svg }}</div>
+                <h1 class="item__title">Interface Utilisateur</h1>
+                <div class="item__description">Design et développement d'interfaces utilisateur</div>
+            </article>
+            <article class="item">
+                <div class="item__icon">{{> assets/concept.svg }}</div>
+                <h1 class="item__title">Conseil & Conception</h1>
+                <div class="item__description">Aide à la définition des besoins et conception d'applications en fonction de ceux-ci</div>
+            </article>
+        </article>
+        <div id="skills-list-index" class="list__index">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    <section>
+        <article id="languages-list" class="list list--languages">
+            <article class="item">
+                <div class="item__icon item__icon--text">EN</div>
+                <h1 class="item__title">Anglais</h1>
+                <div class="item__description">Niveau Avancé - TOEIC 920<br>4 semaines de summer school au Pays de Galles</div>
+            </article>
+            <article class="item">
+                <div class="item__icon item__icon--text">日本語</div>
+                <h1 class="item__title">Japonais</h1>
+                <div class="item__description">Niveau Intermédiaire<br>3 semaines de séjour linguistique à Tokyo</div>
+            </article>
+            <article class="item">
+                <div class="item__icon item__icon--text">ES</div>
+                <h1 class="item__title">Espagnol</h1>
+                <div class="item__description">Notions élémentaires</div>
+            </article>
+        </article>
+        <div id="languages-list-index" class="list__index">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    <section>
+        <span id="hobbies" class="anchor"></span>
+        <h1 class="section__title">Centres d'intérêt</h1>
+        <article id="hobbies-list" class="list list--hobbies">
+            <article class="item">
+                <div class="item__icon">{{> assets/science.svg }}</div>
+                <h1 class="item__title">Sciences</h1>
+                <span class="item__description">Veille quotidienne dans divers domaines : physique, technologique, biologique</span>
+            </article>
+            <article class="item">
+                <div class="item__icon">{{> assets/trading.svg }}</div>
+                <h1 class="item__title">Trading</h1>
+                <span class="item__description">Lecture des courbes et prédiction</span>
+            </article>
+            <article class="item">
+                <div class="item__icon">{{> assets/language.svg }}</div>
+                <h1 class="item__title">Langues</h1>
+                <span class="item__description">Apprentissage des langues, conversation avec des natifs</span>
+            </article>
+        </article>
+        <div id="hobbies-list-index" class="list__index">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__header"><span class="brand"></span></div>
+    <div class="footer__name">Baptiste Rouxel</div>
+</footer>
+<script src="./dist/main.js"></script>
+</body>
+</html>

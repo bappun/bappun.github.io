@@ -1,0 +1,33 @@
+.bg-code { background-image: url('../assets/code.svg'); }
+.bg-design { background-image: url('../assets/design.svg'); }
+.bg-concept { background-image: url('../assets/concept.svg'); }
+.bg-science { background-image: url('../assets/science.svg'); }
+.bg-trading { background-image: url('../assets/trading.svg'); }
+.bg-language { background-image: url('../assets/language.svg'); }
+
+.brand {
+  font-size: 1.25rem;
+  font-weight: bold;
+  user-select: none;
+  display: inline-block;
+
+  &:before { content: 'b'; }
+  &:after { content: 'r'; }
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  & + span { margin-left: @space-text; }
+}
+svg { fill: currentColor; height: 100%; width: 100%; }
+
+.anchor {
+  position: absolute;
+  width: 0;
+  height: @menu-height + @body-border-height;
+  margin-top: -(@menu-height + @body-border-height);
+}

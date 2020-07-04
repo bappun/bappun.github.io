@@ -1,0 +1,93 @@
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  animation: fadein @transition-duration * 5;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    color: inherit;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0.1em;
+      background: white;
+      transition: width @transition-duration;
+    }
+
+    &:hover:after { width: 100%; }
+  }
+}
+
+@media @med-under-md {
+  .menu {
+    &__burger .icon { height: 1em; width: 1em; }
+
+    &__links {
+      display: none;
+      position: absolute;
+      padding-top: @menu-height - @space;
+      padding-bottom: @space;
+      top: 0;
+      background-color: @bg-color-dark;
+      font-weight: bold;
+      width: 100%;
+
+      &--showed {
+        display: block;
+        z-index: 99;
+        & + .menu__overlay { display: block; }
+      }
+    }
+
+    &__link {
+      box-sizing: border-box;
+      padding: @space @box-space;
+      display: block;
+    }
+
+    &__overlay {
+      display: none;
+      position: fixed;
+      height: 100vh;
+      width: 100vw;
+      top: 0;
+      left: 0;
+      background: @bg-color-dark;
+      opacity: .5;
+    }
+  }
+}
+
+@media @med-md {
+  .menu {
+
+    &__links {
+      margin-left: auto;
+      padding: @box-space - @space;
+      .delayAnimation(@transition-duration*5, @transition-duration*5, fadein);
+    }
+
+    &__link {
+      margin: @space;
+      opacity: @transition-opacity;
+      transition: opacity @transition-duration;
+      display: inline-block;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &__burger {
+      display: none !important;
+    }
+  }
+}

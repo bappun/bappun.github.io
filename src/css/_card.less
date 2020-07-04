@@ -1,0 +1,48 @@
+.card {
+  background-color: @bg-color-dark;
+  border-radius: @border-radius;
+  margin-bottom: @space;
+  position: relative;
+
+  &__title {
+    border-radius: @border-radius @border-radius 0 0;
+    padding: @space;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  &__body { padding: @space/2 @space; p { margin: 0; } }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    a { color: inherit; }
+    a + a { margin-left: @space-text; }
+  }
+
+  &__footer {
+    padding: @space;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: fadeout(white, 25%);
+    margin-right: -@space-text;
+    font-size: 0.75em;
+
+    & > * { margin-right: @space-text; }
+  }
+
+  & + .card:before {
+    content: '';
+    background: @accent-color;
+    position: absolute;
+    top: -@space;
+    left: calc(50% - 0.5rem/2);
+    width: 0.5rem;
+    height: @space;
+  }
+}

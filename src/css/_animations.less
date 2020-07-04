@@ -1,0 +1,39 @@
+// KEYFRAMES
+@keyframes standby {
+  from { opacity: 0; }
+  to { opacity: 0; }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes moveup {
+  from { transform: translateY(@box-space) }
+  to { transform: translateY(0) }
+}
+
+@keyframes scalein {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+@keyframes expand {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+
+.delayOneAnimation(@delay, @duration, @animation) when (length(@animation) = 1) {
+  animation: standby @delay, @animation @duration @delay;
+}
+.delaySeveralAnimations(@delay, @duration, @animation) when (length(@animation) > 1) {
+  animation-name: standby, @animation;
+  animation-duration: extract(@delay, 1), @duration;
+  animation-delay: 0ms, @delay;
+}
+.delayAnimation(@delay, @duration, @animation) {
+  .delayOneAnimation(@delay, @duration, @animation) ;
+  .delaySeveralAnimations(@delay, @duration, @animation);
+}

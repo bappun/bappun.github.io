@@ -1,0 +1,32 @@
+.button {
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  height: @button-height;
+  padding: 0 @button-padding;
+  border-radius: 9999999px;
+  background-color: @accent-color;
+  color: white;
+
+  &--inactive { cursor: default };
+  &--rounded {
+    border-radius: 50%;
+    padding: 0;
+    height: @button-height;
+    width: @button-height;
+    img { height: 1.25rem; }
+  }
+  &--brand { background-color: @bg-color-light; }
+  &--transparent { background-color: transparent; padding: 0; height: auto; }
+  &--menu {
+    margin: @box-space @space @box-space @box-space;
+    @media @med-under-md {
+      z-index: 100;
+      & + & { margin-left: 0; }
+    }
+    @media @med-md {
+
+    }
+  }
+}
