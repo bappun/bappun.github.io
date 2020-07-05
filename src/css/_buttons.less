@@ -9,6 +9,9 @@
   background-color: @accent-color;
   color: @font-color;
 
+  transition: opacity @transition-duration;
+  &:hover { opacity: @transition-opacity; }
+
   &--rounded {
     border-radius: 50%;
     padding: 0;
