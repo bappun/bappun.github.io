@@ -9,17 +9,15 @@
   background-color: @accent-color;
   color: @font-color;
 
-  &--inactive { cursor: default };
   &--rounded {
     border-radius: 50%;
     padding: 0;
     height: @button-height;
     width: @button-height;
-    img { height: 1.25em; }
   }
   &--menu {
     margin: @box-space 0.62rem @box-space @box-space;
-    border: 2px solid @accent-color;
+    border: @border-width-sm solid @accent-color;
     @media @med-under-md {
       z-index: 100;
       & + & { margin-left: 0; }
