@@ -1,5 +1,5 @@
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 10;
   width: 100%;
@@ -70,6 +70,11 @@
 }
 
 @media @med-md {
+  .header {
+    background: linear-gradient(white 45%, transparent);
+    padding-bottom: 2rem;
+  }
+
   .menu {
 
     &__links {
