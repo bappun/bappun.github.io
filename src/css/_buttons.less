@@ -21,6 +21,7 @@
   &--menu {
     margin: @box-space 0.62rem @box-space @box-space;
     border: @border-width-sm solid @accent-color;
+    animation: fadein @transition-duration*5;
     @media @med-under-md {
       z-index: 100;
       & + & { margin-left: 0; }
