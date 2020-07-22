@@ -3,17 +3,17 @@
   border-radius: @border-radius;
   margin-bottom: @space;
   position: relative;
+  padding: @space;
 
   &__title {
     border-radius: @border-radius @border-radius 0 0;
-    padding: @space;
     font-weight: bold;
     font-size: 1em;
     margin-bottom: 0;
     text-align: center;
   }
 
-  &__body { padding: @space/2 @space; p { margin: 0; } }
+  &__body { margin: @box-space 0; }
 
   &__logo {
     display: flex;
@@ -24,7 +24,6 @@
   }
 
   &__footer {
-    padding: @space;
     display: flex;
     justify-content: space-between;
     align-items: center;

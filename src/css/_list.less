@@ -1,6 +1,6 @@
 .list {
-  margin-left: -@box-space;
-  margin-right: -@box-space;
+  margin-left: -@box-space/2;
+  margin-right: -@box-space/2;
 
   .item {
     padding-left: @box-space;
@@ -53,7 +53,7 @@
   .list {
     margin: 0 -@space;
     &__index { display: none; }
-
     .item { margin: 0 @space; padding: 0; }
+    .item__description:last-child { margin-bottom: 0; }
   }
 }
