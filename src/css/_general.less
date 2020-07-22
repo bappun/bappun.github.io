@@ -45,9 +45,11 @@ body {
   justify-content: space-between;
   align-items: center;
 
+  &__content { margin: 0; }
+
   @media @med-under-md {
     flex-direction: column;
-    .footer__content { margin-bottom: 2em; text-align: center; }
+    &__content { margin-bottom: 2em; text-align: center; }
   }
 }
 
