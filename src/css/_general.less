@@ -1,5 +1,5 @@
 a { text-decoration: none; color: @accent-color; }
-h1 { margin-top: 0; margin-bottom: 1em; }
+h1 { font-size: 1.75em; @media @med-md { font-size: 2em; } }
 h2 { font-size: 1em; @media @med-md { font-size: 1.25em; } }
 
 .section, .footer { animation: fadein @transition-duration*5; }
@@ -29,7 +29,7 @@ body {
 .section {
   max-width: @max-document-width;
   margin: @section-y-margin auto;
-  padding: 0 @box-space;
+  padding: 0 @box-space/2;
 
   a {
     transition: opacity @transition-duration;
@@ -38,7 +38,7 @@ body {
 
   &:last-child { margin-bottom: @section-y-margin*2; }
 
-  @media @med-under-md { padding: 0 @box-space/2; }
+  @media @med-md { padding: 0 @box-space; }
 }
 
 .footer {
@@ -60,4 +60,6 @@ body {
   border-left: @border-width solid @accent-color;
   border-radius: @border-radius;
   padding-left: 0.5em;
+  margin-top: 0;
+  margin-bottom: 1em;
 }
