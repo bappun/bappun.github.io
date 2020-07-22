@@ -54,7 +54,7 @@ function minifySVG() {
         .pipe(svgmin({
             plugins: [
                 { removeViewBox: false },
-                { removeDimensions: true }
+                { removeDimensions: false },
             ]
         }))
         .pipe(dest(function (file) { return file.base; }));
