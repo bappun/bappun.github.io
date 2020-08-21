@@ -9,7 +9,6 @@ function viewportSizeCheck() {
     isLtMd = window.innerWidth < 768;
 
     if (wasLtMd !== isLtMd) {
-        linksMenu.classList.remove('menu__links--showed');
         deleteCarousels();
         createCarousels();
     }

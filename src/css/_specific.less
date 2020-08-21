@@ -1,20 +1,17 @@
 .intro {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   animation: unset;
   margin: @section-y-margin*2 auto;
   margin-top: @section-y-margin*2-@box-space;
 
+  @media @med-under-md { margin: @section-y-margin auto; margin-top: @box-space; }
+
   &__title {
     margin-top: 0;
     margin-bottom: 0;
-    animation: scalein @transition-duration * 2;
+    animation: scalein @transition-duration*2;
     font-size: 3em;
 
-    @media @med-under-md {
-      font-size: 2.75em;
-    }
+    @media @med-under-md { font-size: 2.5em; }
   }
   &__subtitle {
     color: @font-color-lighter;
@@ -32,9 +29,18 @@
   margin-top: @section-y-margin;
   border: @border-width solid @bg-color-dark;
   border-radius: @border-radius;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
   @animations: fadein, moveup;
   @duration: @transition-duration*5, @transition-duration*5;
   @delay: @transition-duration*2.5, @transition-duration*2.5;
   .delayAnimation(@delay, @duration, @animations);
+
   &__link { margin: @space; }
+
+  @media @med-under-md {
+    margin-top: @section-y-margin/2;
+  }
 }
