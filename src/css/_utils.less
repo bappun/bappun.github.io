@@ -28,6 +28,11 @@ svg { fill: currentColor; height: 100%; width: 100%; }
   margin-top: -@box-space;
 }
 
-.mt {
-  margin-top: @section-y-margin;
-}
+.mt { margin-top: @section-y-margin; }
+.mt-sm { margin-top: @box-space; }
+
+.font-larger { font-size: x-large; }
+.font-lighter { color: @font-color-lighter; }
+
+.d-none-under-md { @media @med-under-md { display: none; } }
+.d-none-md { @media @med-md { display: none; } }

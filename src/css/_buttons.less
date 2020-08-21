@@ -12,22 +12,5 @@
   transition: opacity @transition-duration;
   &:hover { opacity: @transition-opacity; }
 
-  &--rounded {
-    border-radius: 50%;
-    padding: 0;
-    width: @button-height;
-  }
-  &--menu {
-    margin: @box-space;
-    border: @border-width-sm solid @accent-color;
-    animation: fadein @transition-duration*5;
-
-    @media @med-under-md {
-      z-index: 30;
-      margin-right: 0;
-      & + & { margin-left: 0.62rem; }
-    }
-  }
-  &--brand { border-color: @bg-color-dark; background-color: @bg-color; }
   &--transparent { background-color: transparent; padding: 0; height: auto; }
 }

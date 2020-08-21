@@ -7,11 +7,10 @@
 
   &__title {
     border-radius: @border-radius @border-radius 0 0;
-    text-align: center;
     margin-top: 0;
   }
 
-  &__body { margin: @box-space 0; }
+  &__body { margin: @box-space 0; text-align: justify; }
 
   &__logo {
     display: flex;
@@ -26,7 +25,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    color: fadeout(@font-color, 25%);
+    color: @font-color-lighter;
     margin-right: -@space-text;
     font-size: 0.75em;
 

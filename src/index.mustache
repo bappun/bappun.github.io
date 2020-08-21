@@ -15,23 +15,22 @@
 <body>
 <header class="header">
     <nav class="menu" role="navigation">
-        <a class="button button--rounded menu__burger button--menu" role="button" aria-label="Menu">
-            <span class="icon">{{> assets/menu.svg }}</span>
-        </a>
-        <a class="button button--brand button--menu" href="#top" role="button" aria-label="To top"><span class="brand"></span></a>
+        <a class="menu__logo" href="#top" role="button" aria-label="To top"><span class="brand"></span></a>
         <div class="menu__links">
-            <a class="menu__link" href="#skills">Compétences</a>
-            <a class="menu__link" href="#career">Expérience</a>
-            <a class="menu__link" href="#education">Formation</a>
-            <a class="menu__link" href="#hobbies">Centres d'intérêt</a>
+            <a class="menu__link" href="#skills"><span class="icon">{{> assets/skills.svg }}</span>Compétences</a>
+            <a class="menu__link" href="#career"><span class="icon">{{> assets/career.svg }}</span>Expérience</a>
+            <a class="menu__link" href="#education"><span class="icon">{{> assets/education.svg }}</span>Formation</a>
+            <a class="menu__link d-none-under-md" href="#hobbies">Centres d'intérêt</a>
+            <a class="menu__link d-none-md" href="#top"><span class="icon">{{> assets/contact.svg }}</span>Contact</a>
         </div>
         <div class="menu__overlay"></div>
     </nav>
 </header>
 <main id="page">
     <article class="section intro">
-        <h1 class="intro__title">Hello&nbsp;world&nbsp;! self.name == Baptiste&nbsp;Rouxel</h1>
-        <p class="intro__subtitle">Développeur web full stack</p>
+        <span class="font-larger">Hello world !</span>
+        <h1 class="intro__title">Je facilite vos activités avec des outils web sur mesure</h1>
+        <p class="intro__subtitle">Baptiste Rouxel - Développeur web full stack sur Paris</p>
         <div class="contact">
             <a class="button button--transparent contact__link" href="https://www.linkedin.com/in/baptiste-rouxel" target="_blank" rel="noopener">
                 <span class="icon color-linkedin">{{> assets/linkedin.svg }}</span>
@@ -77,7 +76,7 @@
             <span></span>
             <span></span>
         </div>
-        <article id="languages-list" class="list list--languages mt">
+        <article id="languages-list" class="list list--languages mt-sm">
             <article class="item">
                 <div class="item__icon item__icon--text">EN</div>
                 <h2 class="item__title">Anglais</h2>
