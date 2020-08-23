@@ -5,6 +5,17 @@
   .item {
     padding-left: @box-space/2;
     padding-right: @box-space/2;
+    text-align: center;
+
+    &__icon {
+      height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: @secondary-color;
+  
+      &--text { font-size: 3.5rem; font-weight: bold; user-select: none; }
+    }
   }
 
   &__index {
@@ -24,20 +35,6 @@
         border-color: @accent-color;
       }
     }
-  }
-}
-
-.item {
-  text-align: center;
-
-  &__icon {
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: @secondary-color;
-
-    &--text { font-size: 3.5rem; font-weight: bold; user-select: none; }
   }
 }
 
