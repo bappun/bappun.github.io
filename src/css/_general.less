@@ -51,15 +51,22 @@ body {
 
 .footer {
   border-top: @border-width solid @bg-color-dark;
-  padding: @section-y-margin;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: @section-y-margin @box-space/2;
 
-  &__content { margin: 0; }
+  &__content { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: @max-document-width;
+    margin: auto;
+  }
+
+  p { margin: 0; }
 
   @media @med-under-md {
-    flex-direction: column;
-    &__content { margin-bottom: 2em; text-align: center; }
+    &__content { flex-direction: column; }
+    p { margin-bottom: 2em; text-align: center; }
   }
+
+  @media @med-md { padding: @section-y-margin @box-space; }
 }
