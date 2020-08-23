@@ -3,8 +3,8 @@
   margin-right: -@box-space/2;
 
   .item {
-    padding-left: @box-space;
-    padding-right: @box-space;
+    padding-left: @box-space/2;
+    padding-right: @box-space/2;
   }
 
   &__index {
@@ -31,21 +31,21 @@
   text-align: center;
 
   &__icon {
-    height: 100px;
+    height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: @secondary-color;
 
-    &--text { font-size: 4rem; font-weight: bold; user-select: none; }
+    &--text { font-size: 3.5rem; font-weight: bold; user-select: none; }
   }
 }
 
 @media @med-md {
   .list {
-    margin: 0 -@space;
+    margin: 0 -@space*2;
     &__index { display: none; }
-    .item { margin: 0 @space; padding: 0; }
+    .item { margin: 0 @space*2; padding: 0; }
     .item__description:last-child { margin-bottom: 0; }
   }
 }
