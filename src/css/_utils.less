@@ -2,13 +2,23 @@
 .color-twitter { color: #1da1f2; }
 
 .brand {
-  font-size: 1.25em;
+  font-size: 2em;
   font-weight: bold;
   user-select: none;
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: baseline;
 
   &::before { content: 'br'; }
-  &::after { content: '.'; color: @secondary-color; font-size: larger; }
+  &::after {
+    content: '';
+    height: 1ch;
+    width: 1ch;
+    background-color: @secondary-color;
+    filter: drop-shadow(2px 1px 0 @accent-color);
+    border-radius: 50%;
+    margin-left: 1px;
+  }
 }
 
 .icon {
