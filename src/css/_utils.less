@@ -11,13 +11,14 @@
 
   &::before { content: 'br'; }
   &::after {
+    @o-size: calc(1ch - 1px);
     content: '';
-    height: 1ch;
-    width: 1ch;
+    height: @o-size;
+    width: @o-size;
     background-color: @secondary-color;
     filter: drop-shadow(2px 1px 0 @accent-color);
     border-radius: 50%;
-    margin-left: 1px;
+    margin-left: 2px;
   }
 }
 
