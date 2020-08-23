@@ -17,13 +17,12 @@
     <nav class="menu" role="navigation">
         <a class="menu__logo" href="#top" role="button" aria-label="To top"><span class="brand"></span></a>
         <div class="menu__links">
-            <a class="menu__link" href="#skills"><span class="icon">{{> assets/skills.svg }}</span>Compétences</a>
-            <a class="menu__link" href="#career"><span class="icon">{{> assets/career.svg }}</span>Expérience</a>
-            <a class="menu__link" href="#education"><span class="icon">{{> assets/education.svg }}</span>Formation</a>
+            <a class="menu__link" href="#skills"><span class="icon" aria-hidden="true">{{> assets/skills.svg }}</span>Compétences</a>
+            <a class="menu__link" href="#career"><span class="icon" aria-hidden="true">{{> assets/career.svg }}</span>Expérience</a>
+            <a class="menu__link" href="#education"><span class="icon" aria-hidden="true">{{> assets/education.svg }}</span>Formation</a>
             <a class="menu__link d-none-under-md" href="#hobbies">Centres d'intérêt</a>
-            <a class="menu__link d-none-md" href="#contact"><span class="icon">{{> assets/contact.svg }}</span>Contact</a>
+            <a class="menu__link d-none-md" href="#contact"><span class="icon" aria-hidden="true">{{> assets/contact.svg }}</span>Contact</a>
         </div>
-        <div class="menu__overlay"></div>
     </nav>
 </header>
 <main id="page">
@@ -33,19 +32,19 @@
         <span id="contact" class="anchor"></span>
         <div class="contact">
             <a class="button button--transparent contact__link" href="https://www.linkedin.com/in/baptiste-rouxel" target="_blank" rel="noopener">
-                <span class="icon color-linkedin">{{> assets/linkedin.svg }}</span>
+                <span class="icon color-linkedin" aria-hidden="true">{{> assets/linkedin.svg }}</span>
                 <span>LinkedIn</span>
             </a>
             <a class="button button--transparent contact__link" href="https://github.com/bappun" target="_blank" rel="noopener">
-                <span class="icon">{{> assets/github.svg }}</span>
+                <span class="icon" aria-hidden="true">{{> assets/github.svg }}</span>
                 <span>GitHub</span>
             </a>
             <a class="button button--transparent contact__link" href="https://twitter.com/baptiste_rouxel" target="_blank" rel="noopener">
-                <span class="icon color-twitter">{{> assets/twitter.svg }}</span>
+                <span class="icon color-twitter" aria-hidden="true">{{> assets/twitter.svg }}</span>
                 <span>Twitter</span>
             </a>
             <a class="button button--transparent contact__link" href="mailto:hello@baptiste-rouxel.com">
-                <span class="icon">{{> assets/email.svg }}</span>
+                <span class="icon" aria-hidden="true">{{> assets/email.svg }}</span>
                 <span>E-mail</span>
             </a>
         </div>
@@ -55,18 +54,18 @@
         <h1 class="section__title">Compétences</h1>
         <article id="skills-list" class="list list--skills">
             <article class="item">
-                <div class="item__icon">{{> assets/code.svg }}</div>
+                <div class="item__icon" aria-hidden="true">{{> assets/code.svg }}</div>
                 <h2 class="item__title">Développement</h2>
                 <p class="item__description">Programmation en Python, Django, JavaScript, Vue.js</p>
                 <p class="item__description">Utilisation de Git, Docker et Webpack</p>
             </article>
             <article class="item">
-                <div class="item__icon">{{> assets/design.svg }}</div>
+                <div class="item__icon" aria-hidden="true">{{> assets/design.svg }}</div>
                 <h2 class="item__title">Interfaces utilisateur</h2>
                 <p class="item__description">Design et développement d'interfaces utilisateur</p>
             </article>
             <article class="item">
-                <div class="item__icon">{{> assets/concept.svg }}</div>
+                <div class="item__icon" aria-hidden="true">{{> assets/concept.svg }}</div>
                 <h2 class="item__title">Conseil & conception</h2>
                 <p class="item__description">Aide à la définition des besoins et conception d'applications en fonction de ceux-ci</p>
             </article>
@@ -78,19 +77,19 @@
         </div>
         <article id="languages-list" class="list list--languages mt-sm">
             <article class="item">
-                <div class="item__icon item__icon--text">EN</div>
+                <div class="item__icon item__icon--text" aria-hidden="true">EN</div>
                 <h2 class="item__title">Anglais</h2>
                 <p class="item__description">Niveau avancé - TOEIC 920/990</p>
                 <p class="item__description">4 semaines de summer school au Pays de Galles</p>
             </article>
             <article class="item">
-                <div class="item__icon item__icon--text">日本語</div>
+                <div class="item__icon item__icon--text" aria-hidden="true">日本語</div>
                 <h2 class="item__title">Japonais</h2>
                 <p class="item__description">Niveau intermédiaire</p>
                 <p class="item__description">3 semaines d'échange dans un lycée à Tokyo</p>
             </article>
             <article class="item">
-                <div class="item__icon item__icon--text">ES</div>
+                <div class="item__icon item__icon--text" aria-hidden="true">ES</div>
                 <h2 class="item__title">Espagnol</h2>
                 <p class="item__description">Notions élémentaires</p>
             </article>
@@ -190,17 +189,17 @@
         <h1 class="section__title">Centres d'intérêt</h1>
         <article id="hobbies-list" class="list list--hobbies">
             <article class="item">
-                <div class="item__icon">{{> assets/science.svg }}</div>
+                <div class="item__icon" aria-hidden="true">{{> assets/science.svg }}</div>
                 <h2 class="item__title">Sciences</h2>
                 <p class="item__description">Veille quotidienne dans divers domaines : physique, technologique, biologique</p>
             </article>
             <article class="item">
-                <div class="item__icon">{{> assets/trading.svg }}</div>
+                <div class="item__icon" aria-hidden="true">{{> assets/trading.svg }}</div>
                 <h2 class="item__title">Investissements</h2>
                 <p class="item__description">Lecture des courbes, prédiction et gestion des risques</p>
             </article>
             <article class="item">
-                <div class="item__icon">{{> assets/language.svg }}</div>
+                <div class="item__icon" aria-hidden="true">{{> assets/language.svg }}</div>
                 <h2 class="item__title">Langues</h2>
                 <p class="item__description">Apprentissage des langues, conversation avec des natifs</p>
             </article>
