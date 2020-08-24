@@ -20,6 +20,7 @@
 a { text-decoration: none; color: @accent-color; }
 h1 { font-size: 1.75em; @media @med-md { font-size: 2em; } }
 h2 { font-size: 1em; @media @med-md { font-size: 1.25em; } }
+li + li { margin-top: 0.5em; }
 
 .section, .footer { animation: fadein @transition-duration*5; }
 
@@ -43,50 +44,4 @@ body {
   font-family: 'Ubuntu', Arial, sans-serif, 'MS Gothic';
   color: @font-color;
   line-height: 1.5;
-}
-
-.section {
-  max-width: @max-document-width;
-  margin: @section-y-margin auto;
-  padding: 0 @box-space/2;
-
-  &__title {
-    border-left: @border-width solid @accent-color;
-    display: inline-block;
-    border-radius: @border-radius;
-    padding: 0 0.5em;
-    margin-top: 0;
-    margin-bottom: @box-space;
-  }
-
-  &:last-child { margin-bottom: @section-y-margin*2; }
-
-  @media @med-md { padding: 0 @box-space; }
-
-  a {
-    transition: opacity @transition-duration;
-    &:hover { opacity: @transition-opacity; }
-  }
-}
-
-.footer {
-  border-top: @border-width solid @bg-color-dark;
-  padding: @section-y-margin @box-space/2;
-
-  &__content { 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: @max-document-width;
-    margin: auto;
-  }
-
-  p { margin: 0; }
-
-  @media @med-under-md {
-    &__content { flex-direction: column; }
-    p { margin-bottom: 2em; text-align: center; }
-  }
-
-  @media @med-md { padding: @section-y-margin @box-space; }
 }

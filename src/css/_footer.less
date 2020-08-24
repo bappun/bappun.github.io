@@ -1,0 +1,21 @@
+.footer {
+    border-top: @border-width solid @bg-color-dark;
+    padding: @section-y-margin @box-space/2;
+
+    &__content { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: @max-document-width;
+        margin: auto;
+    }
+
+    p { margin: 0; }
+
+    @media @med-under-md {
+        &__content { flex-direction: column; }
+        p { margin-bottom: 2em; text-align: center; }
+    }
+
+    @media @med-md { padding: @section-y-margin @box-space; }
+}
