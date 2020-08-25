@@ -12,10 +12,9 @@
 
 @media @med-md {
   .list--card {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    .card { flex-basis: calc(33% - @space); }
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(33% - @box-space), 1fr));
+    gap: @box-space;
+    .card { margin: 0;}
   }
 }

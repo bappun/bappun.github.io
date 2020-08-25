@@ -2,14 +2,24 @@
   padding: @space;
   margin-bottom: @space;
   border-radius: @border-radius;
-  box-sizing: border-box;
 
   &__icon {
-    height: 70px;
+    height: 50px;
     color: @primary-color;
 
     svg { width: auto; }
-    &--text { font-size: 2.75rem; font-weight: bold; user-select: none; line-height: 1; }
+    &--text {
+      font-size: 1.5rem;
+      font-weight: bold;
+      user-select: none;
+      line-height: 1;
+      border: @border-width-sm solid currentColor;
+      display: inline-flex;
+      align-items: center;
+      padding: 0 @space;
+      border-radius: @border-radius;
+      box-sizing: border-box;
+    }
   }
 
   &__title {
