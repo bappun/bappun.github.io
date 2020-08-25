@@ -5,15 +5,17 @@
   
     &__title {
       display: inline-block;
-      padding: 0 (@space - @border-width);
+      padding-left: @space;
+      padding-right: @space - @border-width;
       margin-top: 0;
       margin-bottom: @box-space;
-      margin-left: @border-width;
       position: relative;
       background-color: @accent-color-light;
+      border-radius: @border-radius;
 
       @media @med-md {
-        padding: 0 (@box-space - @border-width);
+        padding-left: @box-space;
+        padding-right: @box-space - @border-width;
       }
 
       &::before {
@@ -23,7 +25,7 @@
         width: @border-width;
         border-radius: @border-radius;
         background-color: @accent-color;
-        left: -@border-width;
+        left: 0;
       }
     }
   
