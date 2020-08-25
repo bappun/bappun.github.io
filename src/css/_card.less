@@ -1,18 +1,33 @@
 .card {
+  padding: @box-space;
+  margin-bottom: @space;
   border: @border-width solid @bg-color-dark;
   border-radius: @border-radius;
-  margin-bottom: @space;
-  position: relative;
-  padding: @space;
+  box-sizing: border-box;
+
+  &__icon {
+    height: 70px;
+    color: @primary-color;
+
+    svg { width: auto; }
+    &--text { font-size: 2.75rem; font-weight: bold; user-select: none; height: auto; }
+  }
 
   &__title {
     border-radius: @border-radius @border-radius 0 0;
     margin-top: 0;
+    margin-bottom: @box-space;
+    
+    &:not(:first-child) { margin-top: @box-space; }
   }
 
-  &__body { margin: @box-space 0; }
+  &__subtitle {
+    margin-top: -@box-space/1.25;
+    margin-bottom: @box-space;
+    color: @font-color-lighter;
+  }
 
-  &__logo {
+  &__links {
     display: flex;
     align-items: center;
 
@@ -21,24 +36,13 @@
   }
 
   &__footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    margin-top: @box-space;
     color: @font-color-lighter;
-    margin-right: -@space-text;
-    font-size: 0.75em;
-
-    & > * { margin-right: @space-text; }
   }
 
-  & + .card::before {
-    content: '';
-    background: @primary-color;
-    position: absolute;
-    top: -@space - @border-width;
-    left: calc(50% - @border-width/2);
-    width: @border-width;
-    height: @space;
-  }
+  p:last-child { margin-bottom: 0; }
+}
+
+@media @med-md {
+  .card { margin-bottom: @box-space; }
 }

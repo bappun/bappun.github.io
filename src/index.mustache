@@ -30,7 +30,7 @@
         <h1 class="intro__title"><span class="intro__hello">Hello world !</span>Je conçois des applications web modernes et intuitives</h1>
         <p class="intro__subtitle">À la recherche d'opportunités au Japon à partir de mars/avril 2021 (au plus tôt)<span class="muted">&nbsp;-&nbsp;Baptiste Rouxel, développeur web full stack sur Paris</span></p>
         <span id="contact" class="anchor"></span>
-        <div class="contact">
+        <div class="card contact">
             <a class="button button--transparent contact__link" href="https://www.linkedin.com/in/baptiste-rouxel">
                 <span class="icon color-linkedin" aria-hidden="true">{{> assets/linkedin.svg }}</span>
                 <span>LinkedIn</span>
@@ -52,103 +52,74 @@
     <article class="section">
         <span id="skills" class="anchor"></span>
         <h1 class="section__title">Compétences</h1>
-        <article id="skills-list" class="list list--skills">
-            <article class="item">
-                <div class="item__icon" aria-hidden="true">{{> assets/code.svg }}</div>
-                <h2 class="item__title">Développement</h2>
-                <p class="item__description">Programmation en Python, Django, JavaScript, Vue.js</p>
-                <p class="item__description">Utilisation de Git, Docker et Webpack</p>
+        <article class="list list--card">
+            <article class="card">
+                <div class="card__icon" aria-hidden="true">{{> assets/code.svg }}</div>
+                <h2 class="card__title">Développement</h2>
+                <p>Programmation en Python, Django, JavaScript, Vue.js.<br>Utilisation de Git, Docker et Webpack</p>
             </article>
-            <article class="item">
-                <div class="item__icon" aria-hidden="true">{{> assets/design.svg }}</div>
-                <h2 class="item__title">Interfaces utilisateur</h2>
-                <p class="item__description">Design et développement d'interfaces utilisateur</p>
+            <article class="card">
+                <div class="card__icon" aria-hidden="true">{{> assets/design.svg }}</div>
+                <h2 class="card__title">Interfaces utilisateur</h2>
+                <p>Design et développement d'interfaces utilisateur</p>
             </article>
-            <article class="item">
-                <div class="item__icon" aria-hidden="true">{{> assets/concept.svg }}</div>
-                <h2 class="item__title">Conseil & conception</h2>
-                <p class="item__description">Aide à la définition des besoins et conception d'applications en fonction de ceux-ci</p>
+            <article class="card">
+                <div class="card__icon" aria-hidden="true">{{> assets/concept.svg }}</div>
+                <h2 class="card__title">Conseil & conception</h2>
+                <p>Aide à la définition des besoins et conception d'applications en fonction de ceux-ci</p>
             </article>
-        </article>
-        <div id="skills-list-index" class="list__index">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <article id="languages-list" class="list list--languages mt-sm">
-            <article class="item">
-                <div class="item__icon item__icon--text" aria-hidden="true">EN</div>
-                <h2 class="item__title">Anglais</h2>
-                <p class="item__description">Niveau avancé - TOEIC 920/990</p>
-                <p class="item__description">4 semaines de summer school au Pays de Galles</p>
+            <article class="card">
+                <div class="card__icon card__icon--text" aria-hidden="true">EN</div>
+                <h2 class="card__title">Anglais</h2>
+                <p>Niveau avancé - TOEIC 920/990<br>4 semaines de summer school au Pays de Galles</p>
             </article>
-            <article class="item">
-                <div class="item__icon item__icon--text" aria-hidden="true">日本語</div>
-                <h2 class="item__title">Japonais</h2>
-                <p class="item__description">Niveau intermédiaire</p>
-                <p class="item__description">3 semaines d'échange dans un lycée à Tokyo</p>
+            <article class="card">
+                <div class="card__icon card__icon--text" aria-hidden="true">日本語</div>
+                <h2 class="card__title">Japonais</h2>
+                <p>Niveau intermédiaire<br>3 semaines d'échange dans un lycée à Tokyo</p>
             </article>
-            <article class="item">
-                <div class="item__icon item__icon--text" aria-hidden="true">ES</div>
-                <h2 class="item__title">Espagnol</h2>
-                <p class="item__description">Notions élémentaires</p>
+            <article class="card">
+                <div class="card__icon card__icon--text" aria-hidden="true">ES</div>
+                <h2 class="card__title">Espagnol</h2>
+                <p>Notions élémentaires</p>
             </article>
         </article>
-        <div id="languages-list-index" class="list__index">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
     </article>
     <article class="section">
         <span id="career" class="anchor"></span>
         <h1 class="section__title">Expérience</h1>
         <article class="card">
+            <span class="muted">2019-2021</span>
             <h2 class="card__title">Développeur web full stack</h2>
-            <div class="card__body">
-                <p>Travail collaboratif pour la construction d'un entrepôt de données respectant certaines normes.</p>
-                <p>Participation au développement d'une application de gestion d'échantillons pour des questionnaires en ligne réalisés sur Qualtrics. Conception et développement de l'interface utilisateur. Cette application est développée dans le cadre de SSHOC, une plateforme en ligne européenne regroupant des outils pour la recherche en sciences humaines et sociales.</p>
-            </div>
+            <span class="card__subtitle card__links"><a href="https://cdsp.sciences-po.fr/fr">Sciences Po</a><a href="https://www.cnrs.fr">CNRS</a></span>
+            <p>Travail collaboratif pour la construction d'un entrepôt de données respectant certaines normes.</p>
+            <p>Participation au développement d'une application de gestion d'échantillons pour des questionnaires en ligne réalisés sur Qualtrics. Conception et développement de l'interface utilisateur. Cette application est développée dans le cadre de SSHOC, une plateforme en ligne européenne regroupant des outils pour la recherche en sciences humaines et sociales.</p>
             <footer class="card__footer">
-                <div class="tag-list"><span class="tag">django</span><span class="tag">vuejs</span><span class="tag">docker</span><span class="tag">webpack</span></div>
-                <div class="card__logo">
-                    <a href="https://cdsp.sciences-po.fr/fr">Sciences Po</a>
-                    <a href="https://www.cnrs.fr">CNRS</a>
-                </div>
-                <span>2019-2021</span>
+                <div class="list list--tag"><span class="tag">django</span><span class="tag">vuejs</span><span class="tag">docker</span><span class="tag">webpack</span></div>
             </footer>
         </article>
         <article class="card">
+            <span class="muted">2017-2019</span>
             <h2 class="card__title">Apprenti développeur web full stack</h2>
-            <div class="card__body">
-                <p>Je suis intervenu dans le développement d'applications au service de la recherche et l'aide à l'archivage et au traitement des données en sciences sociales.</p>
-                <ul>
-                    <li>Application web de dépôt et d'exploration de données de recherche, aussi utilisée dans le cadre de formations</li>
-                    <li>Application web et mobile permettant de répondre à des questionnaires sur tablette. Gestion des répondants et de leur matériel, planification et développement des questionnaires, développement de questions interactives sur tablette (exemples :  lecteur vidéo, carte interactive)</li>
-                </ul>
-                <p>Dans le cadre de cette deuxième application, j'ai également traité des paradonnées sur les actions réalisées par les répondants et les autres utilisateurs de la plateforme. J'ai aussi effectué une refonte de l'interface mobile pour la rendre plus moderne et accessible.</p>
-                <p>Mon mémoire de fin d'études avait pour sujet l'intégration de composants d'interface dynamiques (Vue.js) dans des pages statiques (Django) tout en utilisant la technologie Docker. Ce travail de recherche a été fondamental pour la création d'une application web dans le contexte d'un nouveau projet européen.
-            </div>
+            <span class="card__subtitle card__links"><a href="https://cdsp.sciences-po.fr/fr">Sciences Po</a><a href="https://www.cnrs.fr">CNRS</a></span>
+            <p>Je suis intervenu dans le développement d'applications au service de la recherche et l'aide à l'archivage et au traitement des données en sciences sociales.</p>
+            <ul>
+                <li>Application web de dépôt et d'exploration de données de recherche, aussi utilisée dans le cadre de formations</li>
+                <li>Application web et mobile permettant de répondre à des questionnaires sur tablette. Gestion des répondants et de leur matériel, planification et développement des questionnaires, développement de questions interactives sur tablette (exemples :  lecteur vidéo, carte interactive)</li>
+            </ul>
+            <p>Dans le cadre de cette deuxième application, j'ai également traité des paradonnées sur les actions réalisées par les répondants et les autres utilisateurs de la plateforme. J'ai aussi effectué une refonte de l'interface mobile pour la rendre plus moderne et accessible.</p>
+            <p>Mon mémoire de fin d'études avait pour sujet l'intégration de composants d'interface dynamiques (Vue.js) dans des pages statiques (Django) tout en utilisant la technologie Docker. Ce travail de recherche a été fondamental pour la création d'une application web dans le contexte d'un nouveau projet européen.
             <footer class="card__footer">
-                <div class="tag-list"><span class="tag">django</span><span class="tag">javascript</span><span class="tag">vuejs</span><span class="tag">docker</span><span class="tag">webpack</span></div>
-                <div class="card__logo">
-                    <a href="https://cdsp.sciences-po.fr/fr">Sciences Po</a>
-                    <a href="https://www.cnrs.fr">CNRS</a>
-                </div>
-                <span>2017-2019</span>
+                <div class="list list--tag"><span class="tag">django</span><span class="tag">javascript</span><span class="tag">vuejs</span><span class="tag">docker</span><span class="tag">webpack</span></div>
             </footer>
         </article>
         <article class="card">
+            <span class="muted">2016-2017</span>
             <h2 class="card__title">Apprenti développeur logiciel</h2>
-            <div class="card__body">
-                <p>Chargé du développement d’un module de gestion de blocs opératoires pour un progiciel médical utilisé dans des hôpitaux français. Création de nouvelles fonctionnalités et migration vers une nouvelle interface utilisateur en suivant une charte graphique.</p>
-            </div>
+            <span class="card__subtitle card__links"><a href="http://www.computer-engineering.fr">Computer Engineering</a></span>
+            <p>Chargé du développement d’un module de gestion de blocs opératoires pour un progiciel médical utilisé dans des hôpitaux français. Création de nouvelles fonctionnalités et migration vers une nouvelle interface utilisateur en suivant une charte graphique.</p>
             <footer class="card__footer">
-                <div class="tag-list"><span class="tag">windev</span></div>
-                <div class="card__logo">
-                    <a href="http://www.computer-engineering.fr">Computer Engineering</a>
-                </div>
-                <span>2016-2017</span>
+                <div class="list list--tag"><span class="tag">windev</span></div>
             </footer>
         </article>
     </article>
@@ -156,68 +127,44 @@
         <span id="education" class="anchor"></span>
         <h1 class="section__title">Formation</h1>
         <article class="card">
+            <span class="muted">2016-2019</span>
             <h2 class="card__title">Ingénieur informatique</h2>
-            <div class="card__body">
-                <p>L’ESIEA forme des ingénieurs généralistes des Sciences et Technologies du Numérique, adaptables à leur environnement technique et humain, ainsi qu’aux exigences de secteurs d’activité très diversifiés en France et à l'international.</p>
-            </div>
-            <footer class="card__footer">
-                <div class="card__logo">
-                    <a href="https://www.esiea.fr">ESIEA</a>
-                    <a href="https://cfa-ite.fr">CFA-ITE</a>
-                </div>
-                <span>2016-2019</span>
-            </footer>
+            <span class="card__subtitle card__links"><a href="https://www.esiea.fr">ESIEA</a><a href="https://cfa-ite.fr">CFA-ITE</a></span>
+            <p>L’ESIEA forme des ingénieurs généralistes des Sciences et Technologies du Numérique, adaptables à leur environnement technique et humain, ainsi qu’aux exigences de secteurs d’activité très diversifiés en France et à l'international.</p>
         </article>
         <article class="card">
+            <span class="muted">2016</span>
             <h2 class="card__title">Les principes fondamentaux du marketing numérique</h2>
-            <div class="card__body">
-                <p>La formation Google Ateliers Numériques consiste en 26 modules couvrant de nombreux thèmes du marketing digital : recherche emailing, médias sociaux, display, vidéo, e-commerce, ciblage, analyse d'audience, et bien plus.</p>
-            </div>
-            <footer class="card__footer">
-                <div class="card__logo">
-                    <a href="https://learndigital.withgoogle.com/ateliersnumeriques">Google Ateliers Numériques</a>
-                </div>
-                <span>2016</span>
-            </footer>
+            <span class="card__subtitle card__links"><a href="https://learndigital.withgoogle.com/ateliersnumeriques">Google Ateliers Numériques</a></span>
+            <p>La formation Google Ateliers Numériques consiste en 26 modules couvrant de nombreux thèmes du marketing digital : recherche emailing, médias sociaux, display, vidéo, e-commerce, ciblage, analyse d'audience, et bien plus.</p>
         </article>
         <article class="card">
+            <span class="muted">2014-2016</span>
             <h2 class="card__title">DUT informatique</h2>
-            <div class="card__body">
-                <p>Les étudiants formés doivent être capables de participer à la conception, la réalisation et la mise en œuvre de systèmes informatiques correspondant aux besoins des utilisateurs. Pour assumer ces responsabilités, les informaticiens doivent être compétents sur le plan technologique, connaître l'environnement socio-économique dans lequel ils auront à exercer leur profession, posséder une bonne culture générale et se montrer aptes à la communication.</p>
-            </div>
-            <footer class="card__footer">
-                <div class="card__logo">
-                    <a href="http://www.iut-velizy.uvsq.fr">IUT de Vélizy</a>
-                </div>
-                <span>2014-2016</span>
-            </footer>
+            <span class="card__subtitle card__links"><a href="http://www.iut-velizy.uvsq.fr">IUT de Vélizy</a></span>
+            <p>Les étudiants formés doivent être capables de participer à la conception, la réalisation et la mise en œuvre de systèmes informatiques correspondant aux besoins des utilisateurs. Pour assumer ces responsabilités, les informaticiens doivent être compétents sur le plan technologique, connaître l'environnement socio-économique dans lequel ils auront à exercer leur profession, posséder une bonne culture générale et se montrer aptes à la communication.</p>
         </article>
     </article>
     <article class="section">
         <span id="hobbies" class="anchor"></span>
         <h1 class="section__title">Centres d'intérêt</h1>
-        <article id="hobbies-list" class="list list--hobbies">
-            <article class="item">
-                <div class="item__icon" aria-hidden="true">{{> assets/science.svg }}</div>
-                <h2 class="item__title">Sciences</h2>
-                <p class="item__description">Veille quotidienne dans divers domaines : physique, technologique, biologique</p>
+        <article class="list list--card">
+            <article class="card">
+                <div class="card__icon" aria-hidden="true">{{> assets/science.svg }}</div>
+                <h2 class="card__title">Sciences</h2>
+                <p>Veille quotidienne dans divers domaines : physique, technologique, biologique</p>
             </article>
-            <article class="item">
-                <div class="item__icon" aria-hidden="true">{{> assets/trading.svg }}</div>
-                <h2 class="item__title">Investissements</h2>
-                <p class="item__description">Lecture des courbes, prédiction et gestion des risques</p>
+            <article class="card">
+                <div class="card__icon" aria-hidden="true">{{> assets/trading.svg }}</div>
+                <h2 class="card__title">Investissements</h2>
+                <p>Lecture des courbes, prédiction et gestion des risques</p>
             </article>
-            <article class="item">
-                <div class="item__icon" aria-hidden="true">{{> assets/language.svg }}</div>
-                <h2 class="item__title">Langues</h2>
-                <p class="item__description">Apprentissage des langues, conversation avec des natifs</p>
+            <article class="card">
+                <div class="card__icon" aria-hidden="true">{{> assets/language.svg }}</div>
+                <h2 class="card__title">Langues</h2>
+                <p>Apprentissage des langues, conversation avec des natifs</p>
             </article>
         </article>
-        <div id="hobbies-list-index" class="list__index">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
     </article>
 </main>
 <footer class="footer">
@@ -226,6 +173,5 @@
         <a href="#top" class="button"><span class="icon" aria-hidden="true">{{> assets/arrow-up.svg }}</span><span>Haut de page</span></a>
     </div>
 </footer>
-<script src="./dist/main.js"></script>
 </body>
 </html>
