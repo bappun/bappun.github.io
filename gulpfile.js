@@ -4,12 +4,9 @@ const extreplace = require('gulp-ext-replace');
 
 const mustache = require('gulp-mustache');
 const less = require('gulp-less');
-const webpack = require('webpack-stream');
-const babel = require('gulp-babel');
 
 const htmlmin = require('gulp-htmlmin');
 const cssmin = require('gulp-clean-css');
-const jsmin = require('gulp-uglify');
 const svgmin = require('gulp-svgmin');
 
 const destDir = './dist';
@@ -34,21 +31,6 @@ function compileCSS() {
         .pipe(dest(destDir));
 }
 
-function compileJS() {
-    return src('./src/main.js')
-        .pipe(webpack({
-            output: {
-                filename: '[name].js',
-            },
-            stats: 'errors-only',
-        }))
-        .pipe(babel({
-            presets: ['@babel/preset-env']
-        }))
-        .pipe(jsmin())
-        .pipe(dest(destDir))
-}
-
 function minifySVG() {
     return src('src/assets/*.svg')
         .pipe(svgmin({
@@ -68,9 +50,5 @@ function watchSCSS() {
     return watch(['./src/css/*.less'], { ignoreInitial: false }, compileCSS);
 }
 
-function watchJS() {
-    return watch(['./src/main.js'], { ignoreInitial: false }, compileJS);
-}
-
-exports.default = series(minifySVG, parallel(compileTemplates, compileCSS, compileJS));
-exports.watch = parallel(watchTemplates, watchSCSS, watchJS);
+exports.default = series(minifySVG, parallel(compileTemplates, compileCSS));
+exports.watch = parallel(watchTemplates, watchSCSS);
