@@ -5,11 +5,16 @@
   
     &__title {
       display: inline-block;
-      padding-left: @space;
+      padding: 0 (@space - @border-width);
       margin-top: 0;
       margin-bottom: @box-space;
       margin-left: @border-width;
       position: relative;
+      background-color: @accent-color-light;
+
+      @media @med-md {
+        padding: 0 (@box-space - @border-width);
+      }
 
       &::before {
         content: '';

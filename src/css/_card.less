@@ -39,12 +39,33 @@
     color: @font-color-lighter;
   }
 
-  &--shadow { background: @bg-color-almost; box-shadow: inset 0 0 8px 2px @bg-color-dark; }
+  &--shadow { background: @bg-color-almost; box-shadow: inset 0 0 4px 2px @bg-color-dark; }
   &--border { border: @border-width solid @bg-color-dark; }
+  &--linked {
+    position: relative;
+    & + &::before {
+      content: '';
+      background: @primary-color;
+      position: absolute;
+      top: -@space;
+      left: calc(50% - @border-width/2);
+      width: @border-width;
+      height: @space;
+    }
+  }
 
   & > *:last-child { margin-bottom: 0; }
 }
 
 @media @med-md {
-  .card { margin-bottom: @box-space; padding: @box-space; }
+  .card {
+    margin-bottom: @box-space;
+    padding: @box-space;
+
+    &--linked {
+      & + &::before {
+        top: -@box-space; height: @box-space;
+      }
+    }
+  }
 }
