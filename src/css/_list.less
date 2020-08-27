@@ -8,6 +8,11 @@
   .list--card {
     .card + .card { margin-top: @space; }
   }
+  .list--card--transparent {
+    .card + .card {
+      margin-top: @box-space + @space;
+    }
+  }
 }
 
 @media @med-md {
@@ -15,6 +20,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(calc(33% - @box-space), 1fr));
     gap: @box-space;
-    .card { margin: 0;}
+    .card { margin: 0; }
+  }
+
+  .list--card--transparent {
+    gap: @box-space + @space;
   }
 }

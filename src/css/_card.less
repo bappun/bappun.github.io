@@ -51,6 +51,7 @@
 
   &--shadow { background: @bg-color-almost; box-shadow: inset 0 0 4px 2px @bg-color-dark; }
   &--border { border: @border-width solid @bg-color-dark; }
+  &--transparent { padding: 0; margin-bottom: @space*2; }
   &--linked {
     position: relative;
     & + &::before {
@@ -77,5 +78,6 @@
         top: -@box-space; height: @box-space;
       }
     }
+    &--transparent { padding: 0; margin-bottom: @box-space*2; }
   }
 }

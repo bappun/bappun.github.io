@@ -5,27 +5,20 @@
   
     &__title {
       display: inline-block;
-      padding-left: @space;
-      padding-right: @space - @border-width;
       margin-top: 0;
       margin-bottom: @box-space;
       position: relative;
-      background-color: @accent-color-light;
-      border-radius: @border-radius;
-
-      @media @med-md {
-        padding-left: @box-space;
-        padding-right: @box-space - @border-width;
-      }
 
       &::before {
         content: '';
         position: absolute;
-        height: 100%;
-        width: @border-width;
+        height: @border-width;
+        width: 38%;
         border-radius: @border-radius;
         background-color: @accent-color;
+        z-index: -1;
         left: 0;
+        bottom: 0;
       }
     }
   
