@@ -1,6 +1,6 @@
 .card {
-  padding: @box-space @space;
-  margin-bottom: @space;
+  padding: @box-space;
+  margin-bottom: @box-space;
   border-radius: @border-radius;
 
   &__icon {
@@ -58,27 +58,18 @@
       content: '';
       background: @primary-color;
       position: absolute;
-      top: -@space;
+      top: -@box-space;
       left: calc(50% - @border-width/2);
       width: @border-width;
-      height: @space;
+      height: @box-space;
       z-index: -1;
     }
   }
 
   & > p:last-child { margin-bottom: 0; }
+  ul { padding-left: @box-space; }
 }
 
 @media @med-md {
-  .card {
-    margin-bottom: @box-space;
-    padding: @box-space;
-
-    &--linked {
-      & + &::before {
-        top: -@box-space; height: @box-space;
-      }
-    }
-    &--transparent { padding: 0; margin-bottom: @box-space*2; }
-  }
+  .card--transparent { margin-bottom: @box-space*2; }
 }
