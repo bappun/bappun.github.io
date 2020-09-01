@@ -1,3 +1,20 @@
+.bgAlphaCalc (@desired_colour, @desired_alpha, @background_colour: white) {
+  @r3: red(@desired_colour);
+  @g3: green(@desired_colour);
+  @b3: blue(@desired_colour);
+
+  @r2: red(@background_colour);
+  @g2: green(@background_colour);
+  @b2: blue(@background_colour);
+
+  // r1 = (r3 - r2 + r2 * a1) / a1
+  @r1: (@r3 - @r2 + (@r2 * @desired_alpha)) / @desired_alpha;
+  @g1: (@g3 - @g2 + (@g2 * @desired_alpha)) / @desired_alpha;
+  @b1: (@b3 - @b2 + (@b2 * @desired_alpha)) / @desired_alpha;
+
+  @return: rgba(@r1, @g1, @b1, @desired_alpha);
+}
+
 .color-linkedin { color: #0073b1; }
 .color-twitter { color: #1da1f2; }
 
@@ -30,7 +47,6 @@
   align-items: center;
   & + span { margin-left: @space-text; }
 }
-svg { fill: currentColor; height: 100%; width: 100%; }
 
 .anchor {
   position: absolute;
@@ -41,22 +57,5 @@ svg { fill: currentColor; height: 100%; width: 100%; }
 
 .d-none-under-md { @media @med-under-md { display: none; } }
 .d-none-md { @media @med-md { display: none; } }
-
 .muted { color: @font-color-lighter; }
-
-.bgAlphaCalc (@desired_colour, @desired_alpha, @background_colour: white) {
-  @r3: red(@desired_colour);
-  @g3: green(@desired_colour);
-  @b3: blue(@desired_colour);
-
-  @r2: red(@background_colour);
-  @g2: green(@background_colour);
-  @b2: blue(@background_colour);
-
-  // r1 = (r3 - r2 + r2 * a1) / a1
-  @r1: (@r3 - @r2 + (@r2 * @desired_alpha)) / @desired_alpha;
-  @g1: (@g3 - @g2 + (@g2 * @desired_alpha)) / @desired_alpha;
-  @b1: (@b3 - @b2 + (@b2 * @desired_alpha)) / @desired_alpha;
-
-  @return: rgba(@r1, @g1, @b1, @desired_alpha);
-}
+.align-center { text-align: center; }
