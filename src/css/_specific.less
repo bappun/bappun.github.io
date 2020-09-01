@@ -1,8 +1,8 @@
 .intro {
   animation: unset;
-  margin: @section-y-margin*2 auto;
+  margin: @section-y-margin*1.5 auto;
 
-  @media @med-under-md { margin: @section-y-margin auto; margin-top: @box-space; }
+  @media @med-under-md { margin-bottom: @section-y-margin; margin-top: @box-space; }
 
   &__title {
     margin-top: 0;
@@ -29,7 +29,7 @@
 .contact {
   align-self: center;
   text-align: center;
-  margin-top: @section-y-margin;
+  margin-top: @section-y-margin/2;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -44,6 +44,6 @@
 
   @media @med-under-md {
     padding: @space;
-    margin-top: @section-y-margin/2;
+    margin-top: @box-space;
   }
 }

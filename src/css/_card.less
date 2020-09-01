@@ -1,5 +1,5 @@
 .card {
-  padding: @box-space;
+  padding: @card-padding;
   margin-bottom: @box-space;
   border-radius: @border-radius;
   background-color: @bg-color-light;
@@ -53,6 +53,7 @@
   &--shadow { .bgAlphaCalc(@bg-color-dark, 0.5); box-shadow: 0 0 10px 0 @return; }
   &--border { border: @border-width solid @bg-color-dark; }
   &--transparent { padding: 0; margin-bottom: @space*2; background-color: transparent; }
+  &--centered { text-align: center; }
   &--linked {
     position: relative;
     & + &::before {
