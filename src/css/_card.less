@@ -51,17 +51,8 @@
   &--border { border: @border-width solid @bg-color-dark; }
   &--transparent { padding: 0; margin-bottom: @space*2; background-color: transparent; }
   &--linked {
-    position: relative;
-    & + &::before {
-      content: '';
-      background: @primary-color;
-      position: absolute;
-      top: -(@box-space + @border-width);
-      left: calc(50% - @border-width/2);
-      width: @border-width;
-      height: @box-space;
-      z-index: -1;
-    }
+    & + &:not(:last-child) { border-radius: 0; }
+    &:not(:last-child) { margin-bottom: -@border-width; }
   }
 
   &:last-child { margin-bottom: 0; }
