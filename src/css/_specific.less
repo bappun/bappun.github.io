@@ -15,7 +15,6 @@
     margin-top: @box-space;
     margin-bottom: 0;
   }
-  &__img { display: none; }
   &__img, &__subtitle {
     @animations: fadein, moveup;
     @duration: @transition-duration*5, @transition-duration*5;
@@ -25,15 +24,21 @@
 
   @media @med-under-md {
     margin-bottom: @section-y-margin; margin-top: @box-space;
+    &__img {
+      position: absolute;
+      margin: @body-border-height+@box-space/2 @box-space/2 0 0;
+      top: 0;
+      right: 0;
+      max-height: 7rem; max-width: 7rem;
+    }
   }
 
-  @media @med-lg {
+  @media @med-md {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     &__text, &__img { flex-basis: 45%; }
-    &__img { display: block; }
   }
 }
 
