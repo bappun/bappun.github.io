@@ -21,6 +21,14 @@
     @delay: @transition-duration*1.25, @transition-duration*1.25;
     .delayAnimation(@delay, @duration, @animations);
   }
+  &__img svg {
+    padding: 1em 0;
+    overflow: visible;
+
+    .float {
+      animation: float 6s ease-in-out infinite;
+    }
+  }
 
   @media @med-under-md {
     margin-bottom: @section-y-margin; margin-top: @box-space;

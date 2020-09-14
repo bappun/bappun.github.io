@@ -23,6 +23,11 @@
   to { width: 100%; }
 }
 
+@keyframes float {
+	0% { transform: translatey(0); }
+	50% { transform: translatey(-1em); }
+	100% { transform: translatey(0); }
+}
 
 .delayOneAnimation(@delay, @duration, @animation) when (length(@animation) = 1) {
   animation: standby @delay, @animation @duration @delay;
