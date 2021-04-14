@@ -1,20 +1,33 @@
 {
   "name": "bappun.github.io",
-  "version": "1.0.0",
-  "private": true,
+  "version": "1.1.0",
   "scripts": {
-    "build": "gulp",
-    "watch": "gulp watch"
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "start": "svelte-kit start",
+    "lint": "prettier --check . && eslint --ignore-path .gitignore .",
+    "format": "prettier --write ."
   },
   "devDependencies": {
-    "gulp": "^4.0.1",
-    "gulp-clean-css": "^4.2.0",
-    "gulp-ext-replace": "^0.3.0",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-less": "^4.0.1",
-    "gulp-mustache": "^5.0.0",
-    "gulp-purgecss": "^2.3.0",
-    "gulp-svgmin": "^3.0.0",
-    "normalize.css": "^8.0.1"
-  }
+    "@rollup/plugin-image": "^2.0.6",
+    "@rollup/pluginutils": "^4.1.0",
+    "@sveltejs/adapter-static": "next",
+    "@sveltejs/kit": "next",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-svelte3": "^3.1.0",
+    "less": "^4.1.1",
+    "normalize.css": "^8.0.1",
+    "prettier": "~2.2.1",
+    "prettier-plugin-svelte": "^2.2.0",
+    "rollup-plugin-svelte-svg": "^0.2.3",
+    "svelte": "^3.29.0",
+    "svelte-preprocess": "^4.0.0",
+    "tslib": "^2.0.0",
+    "typescript": "^4.0.0",
+    "vite": "^2.1.0"
+  },
+  "type": "module"
 }

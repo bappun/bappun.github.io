@@ -1,6 +1,6 @@
 .footer {
     border-top: @border-width solid @bg-color-dark;
-    padding: @section-y-margin/2 @box-space/2;
+    padding: (@section-y-margin/2) (@box-space/2);
 
     &__content { 
         display: flex;
@@ -13,7 +13,7 @@
     p { margin: 0; }
 
     @media @med-under-md {
-        margin-bottom: @box-space*2; /* Space for the menu */
+        margin-bottom: (@box-space*2); /* Space for the menu */
         &__content { flex-direction: column; }
         p { margin-bottom: 2em; text-align: center; }
     }
