@@ -2,7 +2,7 @@
     <slot/>
 </article>
 
-<style lang="less">
+<style lang="less" global>
     @import "css/_variables";
     @import "css/_animations";
 

@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
     import TagList from '$lib/TagList.svelte';
     import Tag from '$lib/Tag.svelte';
 
@@ -24,7 +24,7 @@
     {/if}
 </article>
 
-<style lang="less">
+<style lang="less" global>
     @import "css/_variables";
 
     .card {

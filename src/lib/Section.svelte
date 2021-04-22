@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
     const extraCssClass = $$props.class ? ` ${$$props.class}` : '';
 </script>
 
@@ -6,7 +6,7 @@
     <slot/>
 </article>
 
-<style lang="less">
+<style lang="less" global>
     @import "css/_variables";
     @import "css/_animations";
 

@@ -2,7 +2,7 @@
     <slot/>
 </div>
 
-<style lang="less">
+<style lang="less" global>
     @import "css/_variables";
 
     @media @med-under-md {

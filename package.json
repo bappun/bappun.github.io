@@ -6,29 +6,21 @@
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
     "start": "svelte-kit start",
-    "lint": "prettier --check . && eslint --ignore-path .gitignore .",
-    "format": "prettier --write ."
+    "lint": "eslint --ignore-path .gitignore ."
   },
   "devDependencies": {
     "@rollup/plugin-image": "^2.0.6",
     "@rollup/pluginutils": "^4.1.0",
     "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "next",
-    "@typescript-eslint/eslint-plugin": "^4.19.0",
-    "@typescript-eslint/parser": "^4.19.0",
-    "eslint": "^7.22.0",
-    "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-svelte3": "^3.1.0",
+    "eslint": "^7.24.0",
+    "eslint-plugin-svelte3": "^3.1.2",
     "less": "^4.1.1",
     "normalize.css": "^8.0.1",
-    "prettier": "~2.2.1",
-    "prettier-plugin-svelte": "^2.2.0",
     "rollup-plugin-svelte-svg": "^0.2.3",
-    "svelte": "^3.29.0",
-    "svelte-preprocess": "^4.0.0",
-    "tslib": "^2.0.0",
-    "typescript": "^4.0.0",
-    "vite": "^2.1.0"
+    "svelte": "^3.37.0",
+    "svelte-preprocess": "^4.7.2",
+    "vite": "^2.2.1"
   },
   "type": "module"
 }

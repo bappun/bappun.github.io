@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
     export let title = "title";
     export let icon = undefined;
     export let textIcon = undefined;
@@ -14,7 +14,7 @@
     <slot/>
 </article>
 
-<style lang="less">
+<style lang="less" global>
     @import "css/_variables";
 
     .card {

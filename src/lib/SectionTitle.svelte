@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
     import Anchor from '$lib/Anchor.svelte';
 
     export let id = "";
@@ -7,7 +7,7 @@
 <Anchor id="{id}"/>
 <h1 class="section__title"><slot/></h1>
 
-<style lang="less">
+<style lang="less" global>
     @import "css/_variables";
 
     .section__title {

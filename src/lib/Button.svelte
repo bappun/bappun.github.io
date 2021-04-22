@@ -1,13 +1,13 @@
-<script lang="ts">
+<script>
     export let href = "#";
     export let transparent = false;
 </script>
 
-<a href="{href}" class="button" class:transparent>
+<a href="{href}" class="{transparent ? 'button button--transparent' : 'button'}">
     <slot/>
 </a>
 
-<style lang="less">
+<style lang="less" global>
     @import "css/_variables";
 
     .button {
@@ -23,6 +23,7 @@
 
         transition: opacity @transition-duration;
         &:hover { opacity: @transition-opacity; }
+
+        &--transparent { background-color: transparent; padding: 0; height: auto; }
     }
-    .transparent { background-color: transparent; padding: 0; height: auto; }
 </style>

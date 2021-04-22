@@ -1,6 +1,6 @@
 <span class="tag"><slot/></span>
 
-<style lang="less">
+<style lang="less" global>
     @import "css/_variables";
 
     .tag {

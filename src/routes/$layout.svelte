@@ -25,6 +25,6 @@
     </div>
 </footer>
 
-<style global lang="less">
+<style lang="less" global>
     @import "../lib/css/style";
 </style>

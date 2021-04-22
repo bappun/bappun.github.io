@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
     import Bg from '$lib/assets/bg7.svg';
     import LinkedinIcon from '$lib/assets/linkedin.svg';
     import GithubIcon from '$lib/assets/github.svg';
