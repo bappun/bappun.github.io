@@ -1,7 +1,8 @@
 .card {
-  padding: @card-padding;
+  padding: @card-padding - @border-width;
   margin-bottom: @box-space;
   border-radius: @border-radius;
+  border: @border-width solid @bg-color-darker;
 
   &__icon {
     height: 60px;
@@ -45,8 +46,7 @@
   }
 
   &__footer { margin-top: @box-space; }
-
-  &--border { border: @border-width solid @bg-color-darker; }
+  
   &--bg { margin-bottom: @space*2; background-color: @bg-color-dark; }
   &--linked {
     & + &:not(:last-child) { border-radius: 0; }
@@ -55,8 +55,4 @@
 
   &:last-child { margin-bottom: 0; }
   & > p:last-child { margin-bottom: 0; }
-}
-
-@media @med-md {
-  .card--transparent { margin-bottom: @box-space*2; }
 }
