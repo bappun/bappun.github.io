@@ -18,7 +18,7 @@ function compileTemplates() {
         .pipe(extreplace('.html'))
         .pipe(htmlmin({
             collapseWhitespace: true,
-            collapseInlineTagWhitespace: true,
+            collapseInlineTagWhitespace: false,
             removeAttributeQuotes: true,
             removeComments: true
         }))

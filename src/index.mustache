@@ -18,8 +18,7 @@
         <a class="menu__link" href="#skills"><span class="icon" aria-hidden="true">{{> assets/skills.svg }}</span>Compétences</a>
         <a class="menu__link" href="#career"><span class="icon" aria-hidden="true">{{> assets/career.svg }}</span>Expérience</a>
         <a class="menu__link" href="#education"><span class="icon" aria-hidden="true">{{> assets/education.svg }}</span>Formation</a>
-        <a class="menu__link d-none-under-md" href="#hobbies">Centres d'intérêt</a>
-        <a class="menu__link d-none-md" href="#contact"><span class="icon" aria-hidden="true">{{> assets/contact.svg }}</span>Contact</a>
+        <a class="menu__link" href="#contact"><span class="icon" aria-hidden="true">{{> assets/contact.svg }}</span>Contact</a>
     </nav>
 </header>
 <main id="page">
@@ -72,8 +71,11 @@
             <span class="muted">2019-2021</span>
             <h2 class="card__title">Développeur web full stack</h2>
             <span class="card__subtitle card__links"><a href="https://cdsp.sciences-po.fr/fr">Sciences Po</a><a href="https://www.cnrs.fr">CNRS</a></span>
-            <p>Travail collaboratif pour la construction d'un entrepôt de données respectant certaines normes.</p>
-            <p>Participation au développement d'une application de gestion d'échantillons pour des questionnaires en ligne réalisés sur Qualtrics. Conception et développement de l'interface utilisateur. Cette application est développée dans le cadre de SSHOC, une plateforme en ligne européenne regroupant des outils pour la recherche en sciences humaines et sociales.</p>
+            <h3>data.sciencespo</h3>
+            <p>Travail collaboratif pour la construction d'un entrepôt de données pour la recherche utilisant <a href="https://dataverse.org">Dataverse</a>. Conception et intégration d'une refonte d'interface en adéquation avec la charte Sciences Po.</p>
+            <p><a href="https://data.sciencespo.fr">→ Voir</a></p>
+            <h3>WPSS</h3>
+            <p>Participation au développement d'une application de gestion d'échantillons pour des questionnaires en ligne réalisés sur <a href="https://www.qualtrics.com">Qualtrics</a>. Conception et développement de l'interface utilisateur. Application développée dans le cadre de <a href="https://sshopencloud.eu">SSHOC</a>, une plateforme en ligne européenne regroupant des outils pour la recherche en sciences humaines et sociales.</p>
             <footer class="card__footer">
                 <div class="list list--tag"><span class="tag">git</span><span class="tag">django</span><span class="tag">python</span><span class="tag">vuejs</span><span class="tag">docker</span><span class="tag">webpack</span></div>
             </footer>
@@ -82,13 +84,20 @@
             <span class="muted">2017-2019</span>
             <h2 class="card__title">Apprenti développeur web full stack</h2>
             <span class="card__subtitle card__links"><a href="https://cdsp.sciences-po.fr/fr">Sciences Po</a><a href="https://www.cnrs.fr">CNRS</a></span>
-            <p>Je suis intervenu dans le développement d'applications au service de la recherche et l'aide à l'archivage et au traitement des données en sciences sociales&nbsp;:</p>
-            <ul>
-                <li>application web de dépôt et d'exploration de données de recherche, aussi utilisée dans le cadre de formations&nbsp;;</li>
-                <li>application web et mobile permettant de répondre à des questionnaires sur tablette. Gestion des répondants et de leur matériel, planification et développement des questionnaires, développement de questions interactives sur tablette (exemples&nbsp;:  lecteur vidéo, carte interactive).</li>
-            </ul>
-            <p>Dans le cadre de cette deuxième application, j'ai également traité des paradonnées sur les actions réalisées par les répondants et les autres utilisateurs de la plateforme. J'ai aussi effectué une refonte de l'interface mobile pour la rendre plus moderne et accessible.</p>
-            <p>Mon mémoire de fin d'études avait pour sujet l'intégration de composants d'interface dynamiques (Vue.js) dans des pages statiques (Django) tout en utilisant la technologie Docker. Ce travail de recherche a été fondamental pour la création d'une application web dans le contexte d'un nouveau projet européen.
+            <p>Développement collaboratif d'applications au service de la recherche et l'aide à l'archivage et au traitement des données en sciences sociales.</p>
+            <h3>Site du CDSP</h3>
+            <p>Intégration du design et développement de composants du CMS.</p>
+            <p><a href="https://cdsp.sciences-po.fr">→ Voir</a></p>
+            <h3>BEQUALI</h3>
+            <p>Application web de dépôt et d'exploration de données de recherche, aussi utilisée dans le cadre de formations.</p>
+            <p><a href="https://bequali.fr">→ Voir</a></p>
+            <h3>ELIPSS</h3>
+            <p>Application web et mobile permettant de répondre à des questionnaires pour la recherche en sciences sociales. Outils de gestion des répondants (échantillon de plus de 2200 personnes, représentatif de la France) et de leur matériel, planification et développement des questionnaires, développement de questions interactives sur tablette (exemples&nbsp;:  lecteur vidéo, carte interactive).</p>
+            <p>Traitement des paradonnées sur les actions réalisées par les répondants et les autres utilisateurs de la plateforme. <a href="https://github.com/CDSP-SCPO/eddi19-workshop">Voir un exemple de l'exploitation de ces données</a>.</p>
+            <p>Refonte de l'interface mobile pour la rendre plus moderne et accessible.</p>
+            <p><a href="https://www.elipss.fr">→ Plus d'information</a></p>
+            <h3>Mémoire de fin d'études</h3>
+            <p>Intégration de composants d'interface dynamiques (Vue.js) dans des pages statiques (Django) tout en utilisant la technologie Docker. Ce travail de recherche a été fondamental pour la création d'une application web dans le contexte d'un nouveau projet européen : WPSS.
             <footer class="card__footer">
                 <div class="list list--tag"><span class="tag">git</span><span class="tag">django</span><span class="tag">python</span><span class="tag">javascript</span><span class="tag">vuejs</span><span class="tag">docker</span><span class="tag">webpack</span></div>
             </footer>
@@ -145,25 +154,13 @@
         </div>
     </article>
     <article class="section">
-        <h1 id="contact" class="section__title">Connectons-nous</h1>
-        <div class="contact">
-            <a class="button contact__link" href="https://www.linkedin.com/in/baptiste-rouxel">
-                <span class="icon color-linkedin" aria-hidden="true">{{> assets/linkedin.svg }}</span>
-                <span>LinkedIn</span>
-            </a>
-            <a class="button contact__link" href="https://github.com/bappun">
-                <span class="icon color-black" aria-hidden="true">{{> assets/github.svg }}</span>
-                <span>GitHub</span>
-            </a>
-            <a class="button contact__link" href="https://twitter.com/baptiste_rouxel">
-                <span class="icon color-twitter" aria-hidden="true">{{> assets/twitter.svg }}</span>
-                <span>Twitter</span>
-            </a>
-            <a class="button contact__link" href="mailto:hello@baptiste-rouxel.com">
-                <span class="icon color-black" aria-hidden="true">{{> assets/email.svg }}</span>
-                <span>E-mail</span>
-            </a>
-        </div>
+        <h1 id="contact" class="section__title">Contact</h1>
+        <address class="contact">
+            <a class="button contact__link" href="https://www.linkedin.com/in/baptiste-rouxel"><span class="icon color-linkedin" aria-hidden="true">{{> assets/linkedin.svg }}</span>LinkedIn</a>
+            <a class="button contact__link" href="https://github.com/bappun"><span class="icon color-black" aria-hidden="true">{{> assets/github.svg }}</span>GitHub</a>
+            <a class="button contact__link" href="https://twitter.com/baptiste_rouxel"><span class="icon color-twitter" aria-hidden="true">{{> assets/twitter.svg }}</span>Twitter</a>
+            <a class="button contact__link" href="mailto:hello@baptiste-rouxel.com"><span class="icon color-black" aria-hidden="true">{{> assets/email.svg }}</span>E-mail</span></a>
+        </address>
     </article>
 </main>
 <footer class="footer">
