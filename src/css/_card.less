@@ -46,8 +46,8 @@
 
   &__footer { margin-top: @box-space; }
 
-  &--border { border: @border-width solid @bg-color-dark; }
-  &--transparent { padding: 0; margin-bottom: @space*2; background-color: transparent; }
+  &--border { border: @border-width solid @bg-color-darker; }
+  &--bg { margin-bottom: @space*2; background-color: @bg-color-dark; }
   &--linked {
     & + &:not(:last-child) { border-radius: 0; }
     &:not(:last-child) { margin-bottom: -@border-width; }
