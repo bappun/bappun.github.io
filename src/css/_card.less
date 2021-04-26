@@ -6,6 +6,8 @@
   &__icon {
     height: 60px;
     color: @primary-color;
+    margin-bottom: @box-space;
+    display: inline-block;
 
     svg { width: auto; }
     &--text {
@@ -26,8 +28,6 @@
     border-radius: @border-radius @border-radius 0 0;
     margin-top: 0;
     margin-bottom: 0;
-    
-    &:not(:first-child) { margin-top: @box-space; }
   }
 
   p + h3 { margin-top: @box-space; }
@@ -36,23 +36,48 @@
 
   footer { margin-top: @box-space; }
   
-  &--bg { margin-bottom: @space*2; background-color: @bg-color-dark; }
-  &--linked {
-    padding: 0;
-    margin-bottom: @box-space*2;
-
-    @media @med-md {
-      padding: (@card-padding-y - @border-width) (@card-padding-x - @border-width);
-      border: @border-width solid @bg-color-darker;
-      & + &:not(:last-child) { border-radius: 0; }
-      &:not(:last-child) { margin-bottom: -@border-width; }
-    }
-  }
-
   &:last-child { margin-bottom: 0; }
   & > p:last-child { margin-bottom: 0; }
 
-  @media @med-md {
-    padding: @card-padding-y @card-padding-x;
+  @media @med-md { padding: @card-padding-y @card-padding-x; }
+
+  &--bg { margin-bottom: @space*2; background-color: @bg-color-dark; }
+  &--linked {
+    padding: 0 0 0 @card-padding-x-sm;
+    @media @med-md { padding: 0 0 0 @card-padding-x; }
+
+    margin-bottom: @obj-space;
+    position: relative;
+    @offset: 1rem;
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: @primary-color-light;
+      height: calc(100% + @obj-space + @offset);
+      width: @border-width;
+      left: 0;
+      top: @offset;
+      border-radius: @border-radius;
+    }
+    &:last-child::before {
+      height: 100%;
+      top: 0;
+    }
+    header { 
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: @border-width;
+        border-radius: @border-radius;
+        left: -@card-padding-x-sm;
+        background-color: @accent-color;
+        z-index: 1;
+
+        @media @med-md { left: -@card-padding-x; }
+      }
+    }
   }
 }
