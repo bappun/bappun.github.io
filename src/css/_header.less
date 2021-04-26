@@ -3,7 +3,7 @@
   align-items: baseline;
   max-width: @max-document-width;
   margin: auto;
-  padding: 0 @box-space/2;
+  padding: 0 @box-space-sm;
   @media @med-md { padding: 0 @box-space; }
 
   &__link { color: inherit; }
@@ -11,7 +11,7 @@
 
 @media @med-under-md {
   .menu {
-    margin-top: @body-border-height + @box-space/2;
+    margin-top: @body-border-height + @box-space-sm;
 
     &__links {
       z-index: 20;
@@ -28,7 +28,7 @@
     }
 
     &__link {
-      padding: @space/2 @space;
+      padding: @space/2;
       line-height: 1;
       
       display: flex;
