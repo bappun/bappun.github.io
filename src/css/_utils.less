@@ -17,8 +17,8 @@
     content: '';
     height: @o-size;
     width: @o-size;
-    background-color: @primary-color;
-    filter: drop-shadow(2px 1px 0 @accent-color);
+    background-color: var(--color-primary);
+    filter: drop-shadow(2px 1px 0 var(--color-accent));
     border-radius: 50%;
     margin-left: 2px;
   }
@@ -34,6 +34,6 @@
 
 .d-none-under-md { @media @med-under-md { display: none; } }
 .d-none-md { @media @med-md { display: none; } }
-.muted { color: @font-color-lighter; }
+.muted { color: var(--color-text-muted-2); }
 
 .float { animation: float @transition-duration*30 ease-in-out infinite; }

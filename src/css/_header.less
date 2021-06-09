@@ -19,8 +19,8 @@
       box-sizing: border-box;
       bottom: 0;
       left: 0;
-      border-top: @border-width-sm solid @bg-color-darker;
-      background-color: @bg-color;
+      border-top: @border-width-sm solid var(--color-bg-muted);
+      background-color: var(--color-bg);
       width: 100%;
       display: flex;
       justify-content: space-around;
@@ -58,7 +58,7 @@
     }
 
     &__link {
-      color: @font-color-lighter;
+      color: var(--color-text-muted-2);
       transition: color @transition-duration;
       display: inline-block;
       
@@ -67,7 +67,7 @@
         display: block;
         width: 0;
         height: @border-width-sm;
-        background: @primary-color;
+        background: var(--color-primary);
         transition: width @transition-duration;
         border-radius: @border-radius;
       }

@@ -5,7 +5,7 @@
 
   &__icon {
     height: 60px;
-    color: @primary-color;
+    color: var(--color-primary);
     margin-bottom: @box-space;
     display: inline-block;
 
@@ -41,7 +41,7 @@
 
   @media @med-md { padding: @card-padding-y @card-padding-x; }
 
-  &--bg { margin-bottom: @space*2; background-color: @bg-color-dark; }
+  &--bg { margin-bottom: @space*2; background-color: var(--color-bg-muted); }
   &--linked {
     padding: 0 0 0 @card-padding-x-sm;
     @media @med-md { padding: 0 0 0 @card-padding-x; }
@@ -52,7 +52,7 @@
     &::before {
       content: '';
       position: absolute;
-      background-color: @primary-color-light;
+      background-color: var(--color-primary-muted);
       height: calc(100% + @obj-space + @offset);
       width: @border-width;
       left: 0;
@@ -73,7 +73,7 @@
         width: @border-width;
         border-radius: @border-radius;
         left: -@card-padding-x-sm;
-        background-color: @primary-color;
+        background-color: var(--color-primary);
         z-index: 1;
 
         @media @med-md { left: -@card-padding-x; }

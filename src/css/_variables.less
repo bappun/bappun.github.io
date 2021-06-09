@@ -6,27 +6,6 @@
 
 @max-document-width: 1280px;
 
-@accent1-color: #ffcb58;
-@accent2-color: #6cd4f1;
-@accent3-color: #fe6b87;
-@accent4-color: #63dfc0;
-@accent5-color: #f56565;
-
-@accent-color: @accent1-color;
-@primary-color: @accent2-color;
-
-@primary-color-light: lighten(@primary-color, 25%);
-@primary-color-dark: darken(@primary-color, 45%);
-
-@bg-color: white;
-@bg-color-dark: darken(@bg-color, 2%);
-//@bg-color-darker: darken(@bg-color, 4%);
-@bg-color-darker: darken(@bg-color, 2%);
-
-@font-color: black;
-@font-color-light: lighten(@font-color, 17%);
-@font-color-lighter: lighten(@font-color-light, 17%);
-
 @transition-opacity: 0.65;
 @transition-duration: 200ms;
 
@@ -48,3 +27,56 @@
 @card-padding-x-sm: @box-space-sm;
 @space: 1rem;
 @space-text: 0.5em;
+
+
+// COLORS
+
+@accent1-color: hsl(41, 100%, 67%);
+@accent2-color: hsl(193, 83%, 68%);
+@accent3-color: hsl(349, 99%, 71%);
+@accent4-color: hsl(165, 66%, 63%);
+@accent5-color: hsl(0, 88%, 68%);
+
+@primary-color: @accent2-color;
+@primary-color-hue: hue(@primary-color);
+@primary-color-sat: saturation(@primary-color);
+@primary-color-lig: lightness(@primary-color);
+
+@accent-color: @accent1-color;
+@accent-color-hue: hue(@accent-color);
+@accent-color-sat: saturation(@accent-color);
+@accent-color-lig: lightness(@accent-color);
+
+:root {
+    color-scheme: light;
+
+    @bg-color: white;
+    @font-color: black;
+
+    --color-primary: @primary-color;  // primary
+    --color-primary-muted: hsl(@primary-color-hue, @primary-color-sat, @primary-color-lig + 25);  // primary muted
+    --color-primary-vivid: hsl(@primary-color-hue, @primary-color-sat, @primary-color-lig - 45);  // primary vivid
+    --color-accent: @accent-color;  // accent
+    --color-bg: @bg-color;  // bg default
+    --color-bg-muted: darken(@bg-color, 2%);  // bg muted
+    --color-text: @font-color;  // text default
+    --color-text-muted-1: lighten(@font-color, 17%);  // text muted
+    --color-text-muted-2: lighten(@font-color, 34%);  // text even more muted
+
+    // @media (prefers-color-scheme: dark) {
+    //     color-scheme: dark;
+
+    //     @bg-color: hsl(@primary-color-hue, @primary-color-hue, 5%);
+    //     @font-color: white;
+
+    //     --color-primary: @primary-color;  // primary
+    //     --color-primary-muted: hsl(@primary-color-hue, @primary-color-sat, 25%);  // primary muted
+    //     --color-primary-vivid: hsl(@primary-color-hue, @primary-color-sat, @primary-color-lig);  // primary vivid
+    //     --color-accent: @accent-color;  // accent
+    //     --color-bg: @bg-color;  // bg default
+    //     --color-bg-muted: darken(@bg-color, 2%);  // bg muted
+    //     --color-text: @font-color;  // text default
+    //     --color-text-muted-1: darken(@font-color, 17%);  // text muted
+    //     --color-text-muted-2: darken(@font-color, 34%);  // text even more muted
+    // }
+}

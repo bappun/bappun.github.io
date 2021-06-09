@@ -1,4 +1,4 @@
-a { text-decoration: none; color: @primary-color-dark; }
+a { text-decoration: none; color: var(--color-primary-vivid); }
 h1 { font-size: 2em; @media @med-md { font-size: 2.25em; } }
 h2 { font-size: 1.25em; @media @med-md { font-size: 1.5em; } }
 h3 { font-size: 1em; }
@@ -8,7 +8,10 @@ svg { fill: currentColor; height: 100%; width: 100%; }
 address { font-style: normal; }
 
 html {
-  background-color: @bg-color;
+  font-family: sans-serif, 'MS Gothic';
+  background-color: var(--color-bg);
+  color: var(--color-text-muted-1);
+  line-height: 1.5;
   scroll-behavior: smooth;
   scroll-padding: @box-space;
 
@@ -17,18 +20,13 @@ html {
     display: block;
     width: 100%;
     height: @body-border-height;
-    background: @accent-color;
+    background: var(--color-accent);
     animation: expand @transition-duration*2;
     position: absolute;
     z-index: 30;
   }
 }
 
-body {
-  font-family: sans-serif, 'MS Gothic';
-  color: @font-color-light;
-  line-height: 1.5;
-  margin: 0;
-}
+body { margin: 0; }
 
 .section, .footer { animation: fadein @transition-duration*5; }

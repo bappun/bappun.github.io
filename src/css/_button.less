@@ -6,13 +6,13 @@
   height: @button-height;
   padding: @button-padding/4 @button-padding;
   border-radius: 9999999px;
-  background-color: @bg-color-dark;
+  background-color: var(--color-bg-muted);
   color: inherit;
 
   transition: opacity @transition-duration;
   &:hover { opacity: @transition-opacity; }
 
-  &--accent { background-color: @accent-color; }
+  &--accent { background-color: var(--color-accent); }
 
   .icon { margin-right: @space-text; }
 }
