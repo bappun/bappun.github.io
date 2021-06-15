@@ -4,7 +4,7 @@
   align-items: center;
   display: inline-flex;
   height: @button-height;
-  padding: @button-padding/4 @button-padding;
+  padding: @button-padding/2 @button-padding*1.5;
   border-radius: 9999999px;
   background-color: var(--color-bg-muted);
   color: inherit;
@@ -13,6 +13,7 @@
   &:hover { opacity: @transition-opacity; }
 
   &--accent { background-color: var(--color-accent); }
-
+  &--primary { background-color: var(--color-primary); }
+  
   .icon { margin-right: @space-text; }
 }
