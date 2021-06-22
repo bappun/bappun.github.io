@@ -9,7 +9,7 @@
     & > h1 {
       display: inline-block;
       margin-top: 0;
-      margin-bottom: @section-y-margin/2.5;
+      margin-bottom: (@section-y-margin / 2.5);
       position: relative;
 
       &::before {
@@ -25,7 +25,7 @@
       }
     }
   
-    &:last-child { margin-bottom: @section-y-margin*2; }
+    &:last-child { margin-bottom: (@section-y-margin * 2); }
   
     @media @med-md { padding: 0 @box-space; }
   

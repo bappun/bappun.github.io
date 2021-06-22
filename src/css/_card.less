@@ -42,7 +42,7 @@
 
   @media @med-md { padding: @card-padding-y @card-padding-x; }
 
-  &--bg { margin-bottom: @space*2; background-color: var(--color-bg-muted); }
+  &--bg { margin-bottom: (@space * 2); background-color: var(--color-bg-muted); }
   &--linked {
     padding: 0 0 0 @card-padding-x-sm;
     @media @med-md { padding: 0 0 0 @card-padding-x; }
@@ -73,11 +73,11 @@
         height: 100%;
         width: @border-width;
         border-radius: @border-radius;
-        left: -@card-padding-x-sm;
+        left: -(@card-padding-x-sm);
         background-color: var(--color-primary);
         z-index: 1;
 
-        @media @med-md { left: -@card-padding-x; }
+        @media @med-md { left: -(@card-padding-x); }
       }
     }
   }

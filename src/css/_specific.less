@@ -1,11 +1,11 @@
 .intro {
   animation: unset;
-  margin: @section-y-margin*0.75 auto @section-y-margin auto;
+  margin: (@section-y-margin * 0.75) auto @section-y-margin auto;
 
   &__title {
     margin-top: 0;
     margin-bottom: 0;
-    animation: scalein @transition-duration*2;
+    animation: scalein (@transition-duration * 2);
   }
   &__hello {
     font-weight: normal;
@@ -46,7 +46,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: -@space;
+  margin: -(@space);
 
   &__link { margin: @space; }
 }
