@@ -1,9 +1,9 @@
 <script>
-    import SkillIcon from '$lib/assets/skills.svg';
-    import CareerIcon from '$lib/assets/career.svg';
-    import EducationIcon from '$lib/assets/education.svg';
-    import ContactIcon from '$lib/assets/contact.svg';
-    import ArrowupIcon from '$lib/assets/arrow-up.svg';
+    import SkillIcon from '$lib/assets/skills.svelte';
+    import CareerIcon from '$lib/assets/career.svelte';
+    import EducationIcon from '$lib/assets/education.svelte';
+    import ContactIcon from '$lib/assets/contact.svelte';
+    import ArrowupIcon from '$lib/assets/arrow-up.svelte';
 	import Button from '$lib/Button.svelte';
 </script>
 

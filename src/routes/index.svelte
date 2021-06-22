@@ -1,15 +1,15 @@
 <script>
-    import Bg from '$lib/assets/bg7.svg';
-    import LinkedinIcon from '$lib/assets/linkedin.svg';
-    import GithubIcon from '$lib/assets/github.svg';
-    import TwitterIcon from '$lib/assets/twitter.svg';
-    import EmailIcon from '$lib/assets/email.svg';
-    import CodeIcon from '$lib/assets/code.svg';
-    import DesignIcon from '$lib/assets/design.svg';
-    import ConceptIcon from '$lib/assets/concept.svg';
-    import ScienceIcon from '$lib/assets/science.svg';
-    import TradingIcon from '$lib/assets/trading.svg';
-    import LanguageIcon from '$lib/assets/language.svg';
+    import Bg from '$lib/assets/bg7.svelte';
+    import LinkedinIcon from '$lib/assets/linkedin.svelte';
+    import GithubIcon from '$lib/assets/github.svelte';
+    import TwitterIcon from '$lib/assets/twitter.svelte';
+    import EmailIcon from '$lib/assets/email.svelte';
+    import CodeIcon from '$lib/assets/code.svelte';
+    import DesignIcon from '$lib/assets/design.svelte';
+    import ConceptIcon from '$lib/assets/concept.svelte';
+    import ScienceIcon from '$lib/assets/science.svelte';
+    import TradingIcon from '$lib/assets/trading.svelte';
+    import LanguageIcon from '$lib/assets/language.svelte';
 
     import Anchor from '$lib/Anchor.svelte';
 	import Section from '$lib/Section.svelte';
