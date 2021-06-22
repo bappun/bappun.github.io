@@ -2,24 +2,24 @@
   animation: unset;
   margin: (@section-y-margin * 0.75) auto @section-y-margin auto;
 
+  &__text { animation: scalein (@transition-duration * 2); }
   &__title {
     margin-top: 0;
     margin-bottom: 0;
-    animation: scalein (@transition-duration * 2);
   }
   &__hello {
     font-weight: normal;
     font-size: x-large;
   }
-  &__subtitle { margin: @box-space 0; }
-  &__img, &__subtitle {
+  &__side {
+    width: 100%;
     @animations: fadein, moveup;
     @duration: @transition-duration*5, @transition-duration*5;
     @delay: @transition-duration*1.25, @transition-duration*1.25;
     .delayAnimation(@delay, @duration, @animations);
   }
-  &__img svg { overflow: visible; }
   &__cta {
+    margin-top: @space;
     font-weight: bold;
     @animations: fadein, moveup;
     @duration: @transition-duration*5, @transition-duration*5;
@@ -27,18 +27,18 @@
     .delayAnimation(@delay, @duration, @animations);
   }
 
-  @media @med-under-lg {
+  @media @med-under-md {
     margin-bottom: @section-y-margin; margin-top: @box-space;
-    &__img { display: none; }
+    &__side { margin-top: @box-space; }
   }
 
-  @media @med-lg {
+  @media @med-md {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    &__text { flex-basis: 50%; }
-    &__img { flex-basis: 40%; }
+    align-items: flex-start;
+    &__text { flex-basis: 55%; margin-top: @card-padding-y-sm; }
+    &__side { flex-basis: 35%; }
   }
 }
 

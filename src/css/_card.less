@@ -1,6 +1,5 @@
 .card {
   padding: @card-padding-y-sm @card-padding-x-sm;
-  margin-bottom: @box-space;
   border-radius: @border-radius;
   max-width: @max-text-length;
 
@@ -42,7 +41,8 @@
 
   @media @med-md { padding: @card-padding-y @card-padding-x; }
 
-  &--bg { margin-bottom: (@space * 2); background-color: var(--color-bg-muted); }
+  &--bg { background-color: var(--color-bg-muted); }
+  &--bg--primary { background-color: var(--color-primary-muted); }
   &--linked {
     padding: 0 0 0 @card-padding-x-sm;
     @media @med-md { padding: 0 0 0 @card-padding-x; }

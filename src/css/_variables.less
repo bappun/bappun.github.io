@@ -57,8 +57,10 @@
 
     --color-primary: @primary-color;  // primary
     --color-primary-muted: hsl(@primary-color-hue, @primary-color-sat, @primary-color-lig + 25);  // primary muted
-    --color-primary-vivid: hsl(@primary-color-hue, @primary-color-sat, @primary-color-lig - 45);  // primary vivid
+    --color-primary-vivid: hsl(@primary-color-hue, @primary-color-sat, @primary-color-lig - 35);  // primary vivid
+    --color-primary-dark: hsl(@primary-color-hue, @primary-color-sat, @primary-color-lig - 45);  // primary dark
     --color-accent: @accent-color;  // accent
+    --color-accent-muted: lighten(@accent-color, 17%);  // muted
     --color-bg: @bg-color;  // bg default
     --color-bg-muted: darken(@bg-color, 2%);  // bg muted
     --color-text: @font-color;  // text default
@@ -73,7 +75,7 @@
 
     //     --color-primary: @primary-color;  // primary
     //     --color-primary-muted: hsl(@primary-color-hue, @primary-color-sat, 25%);  // primary muted
-    //     --color-primary-vivid: hsl(@primary-color-hue, @primary-color-sat, @primary-color-lig);  // primary vivid
+    //     --color-primary-dark: hsl(@primary-color-hue, @primary-color-sat, @primary-color-lig);  // primary vivid
     //     --color-accent: @accent-color;  // accent
     //     --color-bg: @bg-color;  // bg default
     //     --color-bg-muted: darken(@bg-color, 2%);  // bg muted

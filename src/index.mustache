@@ -24,11 +24,18 @@
 <main id="page">
     <article class="section intro">
         <div class="intro__text">
-            <h1 class="intro__title"><span class="intro__hello">Hello world 🌏</span><br>Je trouve des solutions de qualité à vos problèmes, dans la bonne humeur&nbsp;!</h1>
-            <p class="intro__subtitle"><b>Baptiste Rouxel</b><br/>Ingénieur web (full stack) à la recherche d'opportunités au Japon.</p>
-            <a href="#contact" class="intro__cta button button--primary"><span class="icon" aria-hidden="true">{{> assets/arrow-right.svg }}</span><span>Connectons-nous</span></a>
+            <span class="intro__hello">Hello world 🌏</span>
+            <h1 class="intro__title">Je trouve des solutions de qualité à vos problèmes, <span class="text-highlight">dans la bonne humeur&nbsp;!</span></h1>
         </div>
-        <div class="intro__img" aria-hidden="true">{{> assets/bg7.svg }}</div>
+        <div class="intro__side">
+            <article class="card card--bg card--bg--primary">
+                <header>
+                    <h2>Baptiste Rouxel</h2>
+                </header>
+                <p>Ingénieur web (full stack) à la recherche d'opportunités au Japon.</p>
+                <a href="#contact" class="intro__cta button button--accent"><span class="icon" aria-hidden="true">{{> assets/arrow-right.svg }}</span><span>Connectons-nous</span></a>
+            </article>
+        <div>
     </article>
     <article class="section">
         <h1 id="skills">Compétences</h1>
