@@ -4,15 +4,15 @@
 
   &__text { animation: scalein (@transition-duration * 2); }
   &__title {
-    margin-top: 0;
+    margin-top: (@space-text / 2);
     margin-bottom: 0;
   }
   &__hello {
     font-weight: normal;
     font-size: x-large;
+    font-family: monospace;
   }
   &__side {
-    width: 100%;
     @animations: fadein, moveup;
     @duration: @transition-duration*5, @transition-duration*5;
     @delay: @transition-duration*1.25, @transition-duration*1.25;
@@ -28,17 +28,17 @@
   }
 
   @media @med-under-md {
-    margin-bottom: @section-y-margin; margin-top: @box-space;
-    &__side { margin-top: @box-space; }
+    margin-bottom: @section-y-margin;
+    margin-top: @box-space;
+    &__side { margin-top: @box-space; align-self: stretch; }
   }
 
   @media @med-md {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
-    &__text { flex-basis: 55%; margin-top: @card-padding-y-sm; }
-    &__side { flex-basis: 35%; }
+    &__text { flex-basis: 55%; }
+    &__side { flex-basis: 32%; }
   }
 }
 
