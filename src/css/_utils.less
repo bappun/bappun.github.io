@@ -13,14 +13,14 @@
 
   &::before { content: 'br'; }
   &::after {
-    @o-size: calc(1ch - 1px);
+    @o-size: 0.9ch;
     content: '';
     height: @o-size;
     width: @o-size;
     background-color: var(--color-primary);
-    filter: drop-shadow(2px 1px 0 var(--color-accent));
+    filter: drop-shadow(0.1ch 0.05ch 0 var(--color-accent-muted));
     border-radius: 50%;
-    margin-left: 2px;
+    margin-left: 0.1ch;
   }
 }
 

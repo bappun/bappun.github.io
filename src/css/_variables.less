@@ -52,7 +52,7 @@
 @primary-color-sat: saturation(@primary-color);
 @primary-color-lig: lightness(@primary-color);
 
-@accent-color: @accent1-color;
+@accent-color: hsl(@primary-color-hue - 180, 100, @primary-color-lig + 10);
 @accent-color-hue: hue(@accent-color);
 @accent-color-sat: saturation(@accent-color);
 @accent-color-lig: lightness(@accent-color);
