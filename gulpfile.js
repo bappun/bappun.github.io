@@ -39,8 +39,8 @@ function minifySVG() {
     return src('src/assets/*.svg')
         .pipe(svgmin({
             plugins: [
-                { removeViewBox: false },
-                { removeDimensions: false },
+                { name: 'removeViewBox', active: false },
+                { name: 'removeDimensions', active: false },
             ]
         }))
         .pipe(dest(function (file) { return file.base; }));
