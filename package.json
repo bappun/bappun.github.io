@@ -14,6 +14,6 @@
     "gulp-less": "^5.0.0",
     "gulp-mustache": "^5.0.0",
     "gulp-purgecss": "^4.0.3",
-    "gulp-svgmin": "^3.0.0"
+    "gulp-svgmin": "^4.0.1"
   }
 }
