@@ -5,12 +5,6 @@
 @med-md: ~"screen and (min-width: 45rem)";
 @med-lg: ~"screen and (min-width: 55rem)";
 
-@max-document-width: 80rem;
-@max-text-length: 80ch;
-
-@transition-opacity: 0.65;
-@transition-duration: 200ms;
-
 @button-padding: 0.75rem;
 @button-height: 2.25rem;
 
@@ -58,6 +52,26 @@
 @accent-color-lig: lightness(@accent-color);
 
 :root {
+    --max-document-width: 80rem;
+    --max-text-length: 80ch;
+    
+    --transition-opacity: 0.65;
+    --transition-duration: 300ms;
+    --transition-duration-2: calc(2 * var(--transition-duration));
+    --transition-duration-5: calc(5 * var(--transition-duration));
+
+
+    // SPACING
+
+    // --space: 1rem;
+
+    // @media @med-md {
+    //     --space: calc(1.5 * var(--space));
+    // }
+
+
+    // COLORS
+
     color-scheme: light;
 
     @bg-color: white;

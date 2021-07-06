@@ -1,5 +1,5 @@
 .section {
-    max-width: @max-document-width;
+    max-width: var(--max-document-width);
     margin: @section-y-margin auto;
     padding: 0 @box-space-sm;
     display: flex;
@@ -30,7 +30,7 @@
     @media @med-md { padding: 0 @box-space; }
   
     a {
-      transition: opacity @transition-duration;
-      &:hover { opacity: @transition-opacity; }
+      transition: opacity var(--transition-duration);
+      &:hover { opacity: var(--transition-opacity); }
     }
 }

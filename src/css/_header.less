@@ -1,7 +1,7 @@
 .menu {
   display: flex;
   align-items: baseline;
-  max-width: @max-document-width;
+  max-width: var(--max-document-width);
   margin: auto;
   padding: 0 @box-space-sm;
   @media @med-md { padding: 0 @box-space; }
@@ -52,14 +52,11 @@
   .menu {
     margin-top: (@section-y-margin / 2);
 
-    &__links {
-      margin-left: auto;
-      .delayAnimation(@transition-duration*5, @transition-duration*5, fadein);
-    }
+    &__links { margin-left: auto; }
 
     &__link {
       color: var(--color-text-muted-2);
-      transition: color @transition-duration;
+      transition: color var(--transition-duration);
       display: inline-block;
       
       &::after {
@@ -68,7 +65,7 @@
         width: 0;
         height: @border-width-sm;
         background: var(--color-primary);
-        transition: width @transition-duration;
+        transition: width var(--transition-duration);
         border-radius: @border-radius;
       }
   

@@ -21,7 +21,7 @@ html {
     width: 100%;
     height: @body-border-height;
     background: var(--color-accent);
-    animation: expand (@transition-duration * 2);
+    animation: expand var(--transition-duration-2);
     position: absolute;
     z-index: 30;
   }
@@ -29,4 +29,6 @@ html {
 
 body { margin: 0; }
 
-.section, .footer { animation: fadein (@transition-duration * 5); }
+.menu, .section, .footer { 
+  animation: fadein var(--transition-duration-5); 
+}

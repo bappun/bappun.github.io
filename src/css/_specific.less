@@ -2,7 +2,9 @@
   animation: unset;
   margin: (@section-y-margin * 0.75) auto (@section-y-margin / 0.75) auto;
 
-  &__text { animation: scalein (@transition-duration * 2); }
+  &__text {
+    animation: scalein var(--transition-duration-2);
+  }
   &__title {
     margin-top: (@space-text / 2);
     margin-bottom: 0;
@@ -14,18 +16,17 @@
     font-family: monospace;
   }
   &__side {
-    @animations: fadein, moveup;
-    @duration: @transition-duration*5, @transition-duration*5;
-    @delay: @transition-duration*1.25, @transition-duration*1.25;
-    .delayAnimation(@delay, @duration, @animations);
+    --transition-delay: calc(var(--transition-duration) * 1.25);
   }
   &__cta {
+    --transition-delay: calc(var(--transition-duration) * 2.5);
     margin-top: @space;
     font-weight: bold;
-    @animations: fadein, moveup;
-    @duration: @transition-duration*5, @transition-duration*5;
-    @delay: @transition-duration*2.5, @transition-duration*2.5;
-    .delayAnimation(@delay, @duration, @animations);
+  }
+  &__side, &__cta {
+    animation-name: standby, fadein, moveup;
+    animation-duration: var(--transition-delay), var(--transition-duration-5), var(--transition-duration-5);
+    animation-delay: 0s, var(--transition-delay), var(--transition-delay);
   }
 
   @media @med-under-md {
