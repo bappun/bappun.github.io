@@ -11,7 +11,7 @@
 
 @media @med-under-md {
   .menu {
-    margin-top: (@body-border-height + @box-space-sm);
+    margin-top: calc(var(--body-border-size) + @box-space-sm);
 
     &__links {
       z-index: 20;
@@ -19,7 +19,7 @@
       box-sizing: border-box;
       bottom: 0;
       left: 0;
-      border-top: @border-width-sm solid var(--color-bg-muted);
+      border-top: var(--border-size) solid var(--color-bg-muted);
       background-color: var(--color-bg);
       width: 100%;
       display: flex;
@@ -63,10 +63,10 @@
         content: '';
         display: block;
         width: 0;
-        height: @border-width-sm;
+        height: var(--border-size);
         background: var(--color-primary);
         transition: width var(--transition-duration);
-        border-radius: @border-radius;
+        border-radius: var(--border-radius);
       }
   
       &:hover { color: inherit; }

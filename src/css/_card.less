@@ -1,6 +1,6 @@
 .card {
-  padding: @card-padding-y-sm @card-padding-x-sm;
-  border-radius: @border-radius;
+  padding: var(--card-padding-y) var(--card-padding-x);
+  border-radius: var(--border-radius);
   max-width: var(--max-text-length);
 
   &__icon {
@@ -15,17 +15,17 @@
       font-weight: bold;
       user-select: none;
       line-height: 1;
-      border: @border-width-sm solid currentColor;
+      border: var(--border-size) solid currentColor;
       display: inline-flex;
       align-items: center;
       padding: 0 @space;
-      border-radius: @border-radius;
+      border-radius: var(--border-radius);
       box-sizing: border-box;
     }
   }
 
   h2 {
-    border-radius: @border-radius @border-radius 0 0;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -39,13 +39,10 @@
   &:last-child { margin-bottom: 0; }
   & > p:last-child { margin-bottom: 0; }
 
-  @media @med-md { padding: @card-padding-y @card-padding-x; }
-
   &--bg { background-color: var(--color-bg-muted); }
   &--bg--primary { background-color: var(--color-primary-muted); }
   &--linked {
-    padding: 0 0 0 @card-padding-x-sm;
-    @media @med-md { padding: 0 0 0 @card-padding-x; }
+    padding: 0 0 0 var(--card-padding-x);
 
     margin-bottom: @obj-space;
     position: relative;
@@ -55,10 +52,10 @@
       position: absolute;
       background-color: var(--color-primary-muted);
       height: calc(100% + @obj-space + @offset);
-      width: @border-width;
+      width: var(--border-size-lg);
       left: 0;
       top: @offset;
-      border-radius: @border-radius;
+      border-radius: var(--border-radius);
     }
     &:last-child::before {
       height: 100%;
@@ -71,13 +68,11 @@
         content: '';
         position: absolute;
         height: 100%;
-        width: @border-width;
-        border-radius: @border-radius;
-        left: -(@card-padding-x-sm);
+        width: var(--border-size-lg);
+        border-radius: var(--border-radius);
+        left: calc(-1 * var(--card-padding-x));
         background-color: var(--color-primary);
         z-index: 1;
-
-        @media @med-md { left: -(@card-padding-x); }
       }
     }
   }
