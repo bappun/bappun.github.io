@@ -3,15 +3,14 @@
   align-items: baseline;
   max-width: var(--max-document-width);
   margin: auto;
-  padding: 0 @box-space-sm;
-  @media @med-md { padding: 0 @box-space; }
+  padding: 0 var(--box-space);
 
   &__link { color: inherit; }
 }
 
 @media @med-under-md {
   .menu {
-    margin-top: calc(var(--body-border-size) + @box-space-sm);
+    margin-top: calc(var(--body-border-size) + var(--box-space));
 
     &__links {
       z-index: 20;

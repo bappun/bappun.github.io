@@ -2,8 +2,7 @@ a { text-decoration: none; color: var(--color-primary-dark); }
 h1 { font-size: 2em; @media @med-md { font-size: 2.25em; } }
 h2 { font-size: 1.25em; @media @med-md { font-size: 1.5em; } }
 h3 { font-size: 1em; }
-ul { padding-left: @box-space; }
-li + li { margin-top: 0.5em; }
+
 svg { fill: currentColor; height: 100%; width: 100%; }
 address { font-style: normal; }
 
@@ -13,7 +12,7 @@ html {
   color: var(--color-text-muted-1);
   line-height: 1.5;
   scroll-behavior: smooth;
-  scroll-padding: @box-space;
+  scroll-padding: var(--space-lg);
 
   &::before {
     content: '';

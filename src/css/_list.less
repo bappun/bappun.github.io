@@ -7,15 +7,14 @@
 
 .list--card {
   @media @med-under-md {
-    .card + .card { margin-top: @box-space; }
+    .card + .card { margin-top: var(--box-space); }
   }
   @media @med-md {
       display: grid;
-      gap: @box-space;
-      grid-template-columns: repeat(auto-fill, minmax(calc(50% - (@box-space*2)), 1fr));
-      .card { margin: 0; }
+      gap: var(--box-space);
+      grid-template-columns: repeat(2, 1fr);
   }
   @media @med-lg {
-    grid-template-columns: repeat(auto-fill, minmax(calc(33% - (@box-space*2)), 1fr));
+    grid-template-columns: repeat(3, 1fr);
   }
 }

@@ -1,7 +1,7 @@
 .section {
     max-width: var(--max-document-width);
     margin: @section-y-margin auto;
-    padding: 0 @box-space-sm;
+    padding: 0 var(--box-space);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,8 +26,6 @@
     }
   
     &:last-child { margin-bottom: (@section-y-margin * 2); }
-  
-    @media @med-md { padding: 0 @box-space; }
   
     a {
       transition: opacity var(--transition-duration);
