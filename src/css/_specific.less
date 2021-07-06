@@ -6,7 +6,7 @@
     animation: scalein var(--transition-duration-2);
   }
   &__title {
-    margin-top: (@space-text / 2);
+    margin-top: 0.25em;
     margin-bottom: 0;
     @media @med-md { font-size: 2.75em };
   }
@@ -20,7 +20,7 @@
   }
   &__cta {
     --transition-delay: calc(var(--transition-duration) * 2.5);
-    margin-top: @space;
+    margin-top: var(--space-lg);
     font-weight: bold;
   }
   &__side, &__cta {
@@ -48,7 +48,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: -(@space);
+  margin: calc(-1 * var(--space-lg));
 
-  &__link { margin: @space; }
+  &__link { margin: var(--space-lg); }
 }

@@ -1,8 +1,8 @@
 .list { width: 100%; }
 
 .list--tag {
-  margin: -(@space / 2);
-  .tag { margin: (@space / 2); }
+  margin: calc(-1 * var(--space));
+  .tag { margin: var(--space); }
 }
 
 .list--card {

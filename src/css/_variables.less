@@ -9,8 +9,6 @@
 @box-space: 2rem;
 @box-space-sm: (@box-space / 1.25);
 @obj-space: (@box-space * 2);
-@space: 1rem;
-@space-text: 0.5em;
 
 @default-font: sans-serif, 'MS Gothic';
 @font: @default-font;
@@ -51,11 +49,21 @@
 
     // SPACING
 
-    // --space: 1rem;
+    @section-y-margin: 12rem;
+    @box-space: 2rem;
+    @box-space-sm: (@box-space / 1.25);
+    @obj-space: (@box-space * 2);
 
-    // @media @med-md {
-    //     --space: calc(1.5 * var(--space));
-    // }
+    --space: 0.5rem;
+    --space-lg: calc(2 * var(--space));
+    --space-xl: calc(4 * var(--space));
+    --box-space: 1.5rem;
+    --box-space-lg: calc(2 * var(--box-space));
+    --section-y-margin: 12rem;
+
+    @media @med-md {
+        --box-space: calc(2 * var(--box-space));
+    }
 
 
     // BORDERS
@@ -75,11 +83,6 @@
         --card-padding-y: calc(@box-space + 0.75rem);
         --card-padding-x: @box-space;
     }
-
-
-    // BUTTONS
-
-    --button-padding: 1rem 1.5rem;
 
 
     // COLORS

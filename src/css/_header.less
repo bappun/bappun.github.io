@@ -28,14 +28,14 @@
     }
 
     &__link {
-      padding: (@space / 2);
+      padding: var(--space);
       line-height: 1;
       
       display: flex;
       flex-direction: column;
       align-items: center;
 
-      & > .icon { margin-bottom: (@space / 2); }
+      & > .icon { margin-bottom: var(--space); }
     }
   }
 }
@@ -74,7 +74,7 @@
 
       & > .icon { display: none; }
 
-      & + & { margin-left: (@space * 2); }
+      & + & { margin-left: var(--space-xl); }
     }
   }
 }
