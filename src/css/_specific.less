@@ -1,6 +1,6 @@
 .intro {
   animation: unset;
-  margin: (@section-y-margin * 0.75) auto (@section-y-margin / 0.75) auto;
+  margin: var(--space-xl) auto var(--section-y-margin);
 
   &__text {
     animation: scalein var(--transition-duration-2);
@@ -30,12 +30,11 @@
   }
 
   @media @med-under-md {
-    margin-bottom: @section-y-margin;
-    margin-top: var(--space-xl);
     &__side { margin-top: var(--space-xl); align-self: stretch; }
   }
 
   @media @med-md {
+    margin: calc(2/3 * var(--section-y-margin)) auto calc(4/3 * var(--section-y-margin)) auto;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;

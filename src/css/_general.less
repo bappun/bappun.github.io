@@ -7,7 +7,7 @@ svg { fill: currentColor; height: 100%; width: 100%; }
 address { font-style: normal; }
 
 html {
-  font-family: @font;
+  font-family: var(--font);
   background-color: var(--color-bg);
   color: var(--color-text-muted-1);
   line-height: 1.5;
@@ -28,6 +28,6 @@ html {
 
 body { margin: 0; }
 
-.menu, .section, .footer { 
+.section, .footer { 
   animation: fadein var(--transition-duration-5); 
 }

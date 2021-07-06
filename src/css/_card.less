@@ -44,14 +44,14 @@
   &--linked {
     padding: 0 0 0 var(--card-padding-x);
 
-    margin-bottom: @obj-space;
+    margin-bottom: var(--space-xxl);
     position: relative;
     @offset: 1rem;
     &::before {
       content: '';
       position: absolute;
       background-color: var(--color-primary-muted);
-      height: calc(100% + @obj-space + @offset);
+      height: calc(100% + var(--space-xxl) + @offset);
       width: var(--border-size-lg);
       left: 0;
       top: @offset;

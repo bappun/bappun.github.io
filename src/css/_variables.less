@@ -5,9 +5,6 @@
 @med-md: ~"screen and (min-width: 45rem)";
 @med-lg: ~"screen and (min-width: 55rem)";
 
-@section-y-margin: 12rem;
-@obj-space: (2rem * 2);
-
 @default-font: sans-serif, 'MS Gothic';
 @font: @default-font;
 // To test fonts (Noto Sans, Rubik, Source Sans Pro)
@@ -17,25 +14,8 @@
 // @font: %(e("'%s',%s"), @custom-font, @default-font);
 
 
-// COLORS
-
-@accent1-color: hsl(41, 100%, 67%);
-@accent2-color: hsl(193, 83%, 68%);
-@accent3-color: hsl(349, 99%, 71%);
-@accent4-color: hsl(165, 66%, 63%);
-@accent5-color: hsl(0, 88%, 68%);
-
-@primary-color: @accent2-color;
-@primary-color-hue: hue(@primary-color);
-@primary-color-sat: saturation(@primary-color);
-@primary-color-lig: lightness(@primary-color);
-
-@accent-color: hsl(@primary-color-hue - 180, 100, @primary-color-lig + 10);
-@accent-color-hue: hue(@accent-color);
-@accent-color-sat: saturation(@accent-color);
-@accent-color-lig: lightness(@accent-color);
-
 :root {
+    --font: @font;
     --max-document-width: 80rem;
     --max-text-length: 80ch;
     
@@ -47,15 +27,15 @@
 
     // SPACING
 
-    // @section-y-margin: 12rem;
-    // @obj-space: (2rem * 2);
-
     --space: 0.5rem;
     --space-lg: calc(2 * var(--space));
     --space-xl: calc(4 * var(--space));
+    --space-xxl: calc(8 * var(--space));
     --box-space: 1.5rem;
     --box-space-lg: calc(2 * var(--box-space));
+    --section-y-margin-sm: 6rem;
     --section-y-margin: 12rem;
+    --section-y-margin-2: 24rem;
 
     @media @med-md {
         --box-space: 2rem;
@@ -77,6 +57,23 @@
 
 
     // COLORS
+
+    @accent1-color: hsl(41, 100%, 67%);
+    @accent2-color: hsl(193, 83%, 68%);
+    @accent3-color: hsl(349, 99%, 71%);
+    @accent4-color: hsl(165, 66%, 63%);
+    @accent5-color: hsl(0, 88%, 68%);
+
+    @primary-color: @accent2-color;
+    @primary-color-hue: hue(@primary-color);
+    @primary-color-sat: saturation(@primary-color);
+    @primary-color-lig: lightness(@primary-color);
+
+    @accent-color: hsl(@primary-color-hue - 180, 100, @primary-color-lig + 10);
+    @accent-color-hue: hue(@accent-color);
+    @accent-color-sat: saturation(@accent-color);
+    @accent-color-lig: lightness(@accent-color);
+
 
     color-scheme: light;
 

@@ -1,6 +1,6 @@
 .footer {
     border-top: var(--border-size-lg) solid var(--color-bg-muted);
-    padding: (@section-y-margin / 2) var(--box-space);
+    padding: var(--section-y-margin-sm) var(--box-space);
 
     &__content { 
         display: flex;
@@ -13,7 +13,7 @@
     p { margin: 0; }
 
     @media @med-under-md {
-        margin-bottom: @obj-space; /* Space for the menu */
+        margin-bottom: var(--space-xxl); /* Space for the menu */
         &__content { flex-direction: column; }
         p { margin-bottom: 2em; text-align: center; }
     }
