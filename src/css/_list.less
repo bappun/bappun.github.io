@@ -1,18 +1,15 @@
-.list { width: 100%; }
-
-.list--tag {
+.tag-list {
   margin: calc(-1 * var(--space));
   .tag { margin: var(--space); }
 }
 
-.list--card {
-  @media @med-under-md {
-    .card + .card { margin-top: var(--box-space); }
-  }
+.card-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xxl);
+
   @media @med-md {
-      display: grid;
-      gap: var(--box-space);
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   @media @med-lg {
     grid-template-columns: repeat(3, 1fr);

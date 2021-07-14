@@ -27,37 +27,26 @@
     
     // COLORS
 
-    @accent1-color: hsl(41, 100%, 67%);
-    @accent2-color: hsl(193, 83%, 68%);
-    @accent3-color: hsl(349, 99%, 71%);
-    @accent4-color: hsl(165, 66%, 63%);
-    @accent5-color: hsl(0, 88%, 68%);
-
-    @primary-color: @accent2-color;
+    @primary-color: hsl(193, 83%, 68%);
     @primary-color-hue: hue(@primary-color);
     @primary-color-sat: saturation(@primary-color);
     @primary-color-lig: lightness(@primary-color);
-
-    @accent-color: hsl(@primary-color-hue - 180, 100, @primary-color-lig + 10);
-    @accent-color-hue: hue(@accent-color);
-    @accent-color-sat: saturation(@accent-color);
-    @accent-color-lig: lightness(@accent-color);
+    @accent-color: hsl(@primary-color-hue + 180, 100%, @primary-color-lig + 10);
 
     color-scheme: light;
 
-    @bg-color: white;
-    @font-color: black;
+    --color-bg: hsl(@primary-color-hue, @primary-color-sat, 100%);  // bg default
+    --color-bg-muted: hsl(@primary-color-hue, @primary-color-sat - 50%, 97%);  // bg muted
 
     --color-primary: @primary-color;  // primary
-    --color-primary-muted: hsl(@primary-color-hue, @primary-color-sat, @primary-color-lig + 25);  // primary muted
-    --color-primary-dark: hsl(@primary-color-hue, 10, @primary-color-lig - 40);  // primary dark
+    --color-primary-muted: hsl(@primary-color-hue, @primary-color-sat, 94%);  // primary muted
+    --color-primary-dark: hsl(@primary-color-hue, @primary-color-sat, 32%);  // primary dark
     --color-accent: @accent-color;  // accent
-    --color-accent-muted: lighten(@accent-color, 17%);  // muted
-    --color-bg: @bg-color;  // bg default
-    --color-bg-muted: darken(@bg-color, 2%);  // bg muted
-    --color-text: @font-color;  // text default
-    --color-text-muted-1: lighten(@font-color, 17%);  // text muted
-    --color-text-muted-2: lighten(@font-color, 34%);  // text even more muted
+    --color-accent-muted: lighten(@accent-color, 17%);  // accent muted
+    
+    --color-text: hsl(@primary-color-hue, @primary-color-sat - 60%, 13%);  // text default
+    --color-text-muted: hsl(@primary-color-hue, @primary-color-sat - 60%, 40%);  // text muted
+    --color-link: var(--color-primary-dark);
 
 
     // SPACING
@@ -67,7 +56,6 @@
     --space-xl: calc(4 * var(--space));
     --space-xxl: calc(8 * var(--space));
     --box-space: 1.5rem;
-    --box-space-lg: calc(2 * var(--box-space));
     --section-y-margin-sm: 6rem;
     --section-y-margin: 12rem;
     --section-y-margin-2: 24rem;
