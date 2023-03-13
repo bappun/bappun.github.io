@@ -54,5 +54,6 @@ function watchSCSS() {
     return watch(['./src/css/*.less'], { ignoreInitial: false }, compileCSS);
 }
 
-exports.default = series(minifySVG, parallel(compileTemplates, compileCSS));
+// exports.default = series(minifySVG, parallel(compileTemplates, compileCSS));
+exports.default = series(parallel(compileTemplates, compileCSS));
 exports.watch = parallel(watchTemplates, watchSCSS);
